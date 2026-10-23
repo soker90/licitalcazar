@@ -6,6 +6,7 @@
   "logoPath": "/logo.svg",
   "logoAlt": "LicitAlcázar",
   "brandMark": "LA",
+  "instanceCreationGuide": false,
   "theme": {
     "accent": "#00d4a4",
     "primary": "#0d9373",
