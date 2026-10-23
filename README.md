@@ -21,7 +21,9 @@ Clona el repositorio con sus submódulos:
 git clone --recurse-submodules https://github.com/soker90/licitalcazar.git
 cd licitalcazar/adjudica
 pnpm install
-ADJUDICA_INSTANCE_ROOT=.. ADJUDICA_INSTANCE_DB_PATH=../data/licitaciones_alcazar.db pnpm dev
+ADJUDICA_INSTANCE_ROOT=.. ADJUDICA_INSTANCE_DB_PATH=../data/licitaciones_alcazar.db pnpm prepare:instance
+ADJUDICA_DB_PATH=../data/licitaciones_alcazar.db pnpm run migrate-db
+pnpm dev
 ```
 
 Vercel compila desde la raíz de la instancia y prepara la configuración, logotipo y base de datos antes de construir la aplicación. Los flujos de GitHub Actions ejecutan las tareas de sincronización desde el submódulo y guardan los cambios en `data/`.
