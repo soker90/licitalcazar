@@ -1,0 +1,3 @@
+[submodule "adjudica"]
+	path = adjudica
+	url = https://github.com/soker90/adjudica.git

@@ -9,10 +9,21 @@ permissions:
 jobs:
   rebuild-audit:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: adjudica
+    env:
+      ADJUDICA_INSTANCE_ROOT: ${{ github.workspace }}
+      ADJUDICA_DB_PATH: ${{ github.workspace }}/data/licitaciones_alcazar.db
+      ADJUDICA_AUTHORITIES_CONFIG_PATH: ${{ github.workspace }}/data/contracting-authorities.json
+      ADJUDICA_CATALOG_DIR: ${{ github.workspace }}/data/catalogs
+      ADJUDICA_RAW_DIR: ${{ github.workspace }}/data_raw
+      ADJUDICA_HISTORICAL_DATA_PATH: ${{ github.workspace }}/data/historical-sources.json
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          submodules: recursive
           persist-credentials: false
 
       - name: Configurar pnpm
@@ -24,6 +35,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
+          cache-dependency-path: adjudica/pnpm-lock.yaml
           node-version: 24
           cache: pnpm
 
@@ -40,21 +52,21 @@ jobs:
           set -Eeuo pipefail
           mkdir -p audit-output
 
-          cp data/licitaciones_alcazar.db audit-output/licitaciones_alcazar.before.db
+          cp "${{ github.workspace }}/data/licitaciones_alcazar.db" audit-output/licitaciones_alcazar.before.db
 
           pnpm run rebuild-db
 
           pnpm test
           pnpm run validate-db
 
-          cp data/licitaciones_alcazar.db audit-output/licitaciones_alcazar.rebuilt.db
+          cp "${{ github.workspace }}/data/licitaciones_alcazar.db" audit-output/licitaciones_alcazar.rebuilt.db
 
       - name: Comparar snapshots
         run: |
           set -Eeuo pipefail
           node scripts/compare-db-snapshots.js \
-            --before=audit-output/licitaciones_alcazar.before.db \
-            --after=data/licitaciones_alcazar.db \
+            --before="audit-output/licitaciones_alcazar.before.db" \
+            --after="${{ github.workspace }}/data/licitaciones_alcazar.db" \
             | tee audit-output/compare.txt
 
       - name: Guardar resultados de auditoría

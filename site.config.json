@@ -1,0 +1,19 @@
+{
+  "siteName": "LicitAlcázar",
+  "siteDescription": "Datos abiertos y análisis de contratación pública de Alcázar de San Juan.",
+  "siteUrl": "https://licitalcazar.vercel.app",
+  "geographicLabel": "Alcázar de San Juan, Ciudad Real",
+  "logoPath": "/logo.svg",
+  "logoAlt": "LicitAlcázar",
+  "brandMark": "LA",
+  "theme": {
+    "accent": "#00d4a4",
+    "primary": "#0d9373",
+    "soft": "#ecfdf5"
+  },
+  "localityName": "Alcázar de San Juan",
+  "provinceCode": "13",
+  "provinceName": "Ciudad Real",
+  "localityAliases": ["Alcazar de San Juan", "Alcázar"],
+  "localSupplierNifs": []
+}

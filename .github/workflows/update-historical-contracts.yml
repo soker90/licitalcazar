@@ -15,10 +15,21 @@ concurrency:
 jobs:
   update-historical-contracts:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: adjudica
+    env:
+      ADJUDICA_INSTANCE_ROOT: ${{ github.workspace }}
+      ADJUDICA_DB_PATH: ${{ github.workspace }}/data/licitaciones_alcazar.db
+      ADJUDICA_AUTHORITIES_CONFIG_PATH: ${{ github.workspace }}/data/contracting-authorities.json
+      ADJUDICA_CATALOG_DIR: ${{ github.workspace }}/data/catalogs
+      ADJUDICA_RAW_DIR: ${{ github.workspace }}/data_raw
+      ADJUDICA_HISTORICAL_DATA_PATH: ${{ github.workspace }}/data/historical-sources.json
     steps:
       - name: Checkout del repositorio
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          submodules: recursive
           ref: master
           persist-credentials: false
 
@@ -28,6 +39,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
+          cache-dependency-path: adjudica/pnpm-lock.yaml
           node-version: 24
           cache: 'pnpm'
 
@@ -43,7 +55,7 @@ jobs:
           set -Eeuo pipefail
           YEARS="$(node <<'NODE'
           const { DatabaseSync } = require('node:sqlite');
-          const db = new DatabaseSync('data/licitaciones_alcazar.db');
+          const db = new DatabaseSync(process.env.ADJUDICA_DB_PATH);
           const currentYear = new Date().getUTCFullYear();
           const terminal = new Set(['Resuelta', 'Anulada', 'Desierta', 'Formalizada']);
 
@@ -107,6 +119,7 @@ jobs:
           pnpm run validate-db
 
       - name: Hacer commit y push si hay cambios
+        working-directory: .
         if: steps.years.outputs.years != ''
         env:
           GH_TOKEN: ${{ github.token }}
