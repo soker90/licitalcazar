@@ -15,5 +15,6 @@
   "provinceCode": "13",
   "provinceName": "Ciudad Real",
   "localityAliases": ["Alcazar de San Juan", "Alcázar"],
-  "localSupplierNifs": []
+  "localSupplierNifs": [],
+  "legacyGrantAuthorityFlagColumn": "is_alcazar"
 }
