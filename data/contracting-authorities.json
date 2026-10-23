@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "contracting_authorities": [
+    {
+      "id": "ayuntamiento-contratacion",
+      "placsp_id": "31052930149053",
+      "nif": "P1300500D",
+      "name": "Concejalía Delegada de Contratación del Ayuntamiento de Alcázar de San Juan",
+      "scope": "Directa Municipal",
+      "historical_names": [
+        "Concejalia Delegada Area Régimen Interior del Ayuntamiento de Alcázar de San Juan"
+      ]
+    },
+    {
+      "id": "ayuntamiento-pleno",
+      "placsp_id": "31304670174227",
+      "nif": "P1300500D",
+      "name": "Pleno del Ayuntamiento de Alcázar de San Juan",
+      "scope": "Directa Municipal",
+      "historical_names": []
+    },
+    {
+      "id": "ayuntamiento-junta-gobierno",
+      "placsp_id": "31618340205594",
+      "nif": "P1300500D",
+      "name": "Junta de Gobierno del Ayuntamiento de Alcázar de San Juan",
+      "scope": "Directa Municipal",
+      "historical_names": []
+    },
+    {
+      "id": "aguas-consejo",
+      "placsp_id": "50035410005401",
+      "nif": "A13157029",
+      "name": "Consejo de Administración de Aguas de Alcázar, Empresa Municipal S.A.U.",
+      "scope": "Directa Municipal",
+      "historical_names": []
+    },
+    {
+      "id": "aguas-gerencia",
+      "placsp_id": "50035420005402",
+      "nif": "A13157029",
+      "name": "Dirección Gerencia de Aguas de Alcázar, Empresa Municipal S.A.U.",
+      "scope": "Directa Municipal",
+      "historical_names": []
+    },
+    {
+      "id": "aguas-junta-general",
+      "placsp_id": "51583660202126",
+      "nif": "A13157029",
+      "name": "Junta General de Aguas de Alcázar, Empresa Municipal S.A.U.",
+      "scope": "Directa Municipal",
+      "historical_names": []
+    },
+    {
+      "id": "comsermancha-presidencia",
+      "placsp_id": "30111420016962",
+      "nif": "P1300031J",
+      "name": "Presidencia de la Mancomunidad de Servicios COMSERMANCHA",
+      "scope": "Indirecta (Mancomunidad)",
+      "historical_names": [
+        "Presidencia de la Mancomunidad de Servicios COMSERMANCHA"
+      ]
+    },
+    {
+      "id": "comsermancha-pleno",
+      "placsp_id": "30111440016964",
+      "nif": "P1300031J",
+      "name": "Pleno de la Mancomunidad de Servicios COMSERMANCHA",
+      "scope": "Indirecta (Mancomunidad)",
+      "historical_names": [
+        "Pleno de la Mancomunidad de Servicios COMSERMANCHA"
+      ]
+    },
+    {
+      "id": "imd-presidencia",
+      "placsp_id": "41083900152150",
+      "nif": "P6300504E",
+      "name": "Presidencia del Instituto Municipal de Deportes de Alcázar de San Juan",
+      "scope": "Directa Municipal",
+      "historical_names": [
+        "Presidencia del Instituto Municipal de Deportes de Alcázar de San Juan"
+      ]
+    },
+    {
+      "id": "pmc-presidencia",
+      "placsp_id": "31071310150891",
+      "nif": "P6300505B",
+      "name": "Presidencia del Patronato Municipal de Cultura",
+      "scope": "Directa Municipal",
+      "historical_names": [
+        "Presidencia del Patronato Municipal de Cultura"
+      ]
+    }
+  ]
+}

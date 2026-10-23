@@ -1,0 +1,18 @@
+[
+  {"entity_id":"18024551","field_name":"awarded_amount","corrected_value":34154.39,"source":"PLACSP / acta de adjudicacion","reason":"La fuente de datos contenia 68308.78; el expediente oficial recoge 34154.39 EUR sin IVA."},
+  {"entity_id":"18024551","field_name":"awarded_amount_incl_vat","corrected_value":41326.81,"source":"PLACSP / acta de adjudicacion","reason":"El expediente oficial recoge 41326.81 EUR IVA incluido."},
+  {"entity_id":"18126661","field_name":"awarded_amount","corrected_value":1705500,"source":"Ayuntamiento de Alcazar de San Juan / relacion de contratos formalizados 2025","reason":"La fuente de datos contenia 3411000; la relacion oficial recoge 1705500 EUR sin IVA."},
+  {"entity_id":"18126661","field_name":"awarded_amount_incl_vat","corrected_value":2063655,"source":"Ayuntamiento de Alcazar de San Juan / relacion de contratos formalizados 2025","reason":"La relacion oficial recoge 2063655 EUR IVA incluido."},
+  {"entity_id":"12049614","field_name":"awarded_amount","corrected_value":93685.64,"source":"PLACSP / anuncio de adjudicacion","reason":"La fuente de datos contenia 187371.28; el anuncio oficial recoge 93685.64 EUR sin IVA."},
+  {"entity_id":"12049614","field_name":"awarded_amount_incl_vat","corrected_value":113359.63,"source":"PLACSP / anuncio de adjudicacion","reason":"El anuncio oficial recoge 113359.63 EUR IVA incluido."},
+  {"entity_id":"9332027","field_name":"awarded_amount","corrected_value":7000,"source":"PLACSP / registro de licitacion","reason":"La fuente de datos contenia 14000; el expediente recoge 7000 EUR sin IVA."},
+  {"entity_id":"9332027","field_name":"awarded_amount_incl_vat","corrected_value":8470,"source":"PLACSP / registro de licitacion","reason":"El importe adjudicado con IVA es 8470 EUR."},
+  {"entity_id":"9575683","field_name":"awarded_amount","corrected_value":7000,"source":"PLACSP / registro de licitacion","reason":"La fuente de datos contenia 14000; el expediente recoge 7000 EUR sin IVA."},
+  {"entity_id":"9575683","field_name":"awarded_amount_incl_vat","corrected_value":8470,"source":"PLACSP / registro de licitacion","reason":"El importe adjudicado con IVA es 8470 EUR."},
+  {"entity_id":"9838434","field_name":"awarded_amount","corrected_value":7920,"source":"PLACSP / historial de adjudicaciones","reason":"La fuente de datos contenia 15840; el expediente recoge 7920 EUR sin IVA."},
+  {"entity_id":"9838434","field_name":"awarded_amount_incl_vat","corrected_value":9583.2,"source":"PLACSP / historial de adjudicaciones","reason":"El importe adjudicado con IVA es 9583.20 EUR."},
+  {"entity_id":"31618340205594","field_name":"awarded_amount","corrected_value":1870406.94,"source":"PLACSP / auditoría verificada","reason":"Importe adjudicado verificado del expediente 7/2025 Obras."},
+  {"entity_id":"31618340205594","field_name":"awarded_amount_incl_vat","corrected_value":2263192.4,"source":"PLACSP / auditoría verificada","reason":"Importe adjudicado con IVA verificado del expediente 7/2025 Obras."},
+  {"entity_id":"31618340205594","field_name":"is_lotized","corrected_value":0,"source":"PLACSP / auditoría verificada","reason":"El expediente verificado no tiene lotización."},
+  {"entity_id":"31618340205594","field_name":"lot_count","corrected_value":1,"source":"PLACSP / auditoría verificada","reason":"El expediente verificado corresponde a un único contrato."},
+  {"entity_id":"31618340205594","field_name":"lots_source","corrected_value":"VERIFICADO_PLACSP","source":"PLACSP / auditoría verificada","reason":"Estructura de lotes verificada a partir de la fuente oficial."}]

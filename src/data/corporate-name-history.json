@@ -1,0 +1,90 @@
+{
+  "A80241789": {
+    "cif": "A80241789",
+    "nombreActual": "SERVEO SERVICIOS, S.A.U.",
+    "divisionesActivas": [
+      {
+        "nombre": "SERVEO SERVICIOS, S.A.U.",
+        "descripcion": "División principal de infraestructuras, mantenimiento y servicios a la ciudad."
+      },
+      {
+        "nombre": "SERVEO SOCIAL, S.L.U.",
+        "descripcion": "División especializada activa en servicios asistenciales, sociosanitarios y ayuda a domicilio."
+      }
+    ],
+    "nombresAnteriores": [
+      {
+        "nombre": "Ferrovial Servicios S.A.",
+        "periodo": "2020 - 2021",
+        "motivo": "Denominación mercantil histórica anterior a la venta de la división de servicios municipales de Ferrovial a Portobello Capital en 2021."
+      }
+    ],
+    "motivoGeneral": "Reestructuración corporativa tras la adquisición de Ferrovial Servicios por Portobello Capital (2021), pasando a operar bajo la marca Serveo con divisiones especializadas (Serveo Servicios y Serveo Social).",
+    "tipo": "rebranding"
+  },
+  "A87803862": {
+    "cif": "A87803862",
+    "nombreActual": "TotalEnergies Electricidad y Gas España SA",
+    "nombresAnteriores": [
+      {
+        "nombre": "Total Gas y Electricidad España, S.A.U.",
+        "periodo": "2022 - 2023",
+        "motivo": "Razón social original de la operadora energética antes del cambio corporativo global a TotalEnergies."
+      }
+    ],
+    "motivoGeneral": "Transformación estratégica internacional del grupo petrolero francés Total a TotalEnergies en mayo de 2021.",
+    "tipo": "rebranding"
+  },
+  "A28003119": {
+    "cif": "A28003119",
+    "nombreActual": "MOEVE S.A.",
+    "nombresAnteriores": [
+      {
+        "nombre": "COMPAÑÍA ESPAÑOLA DE PETRÓLEOS, S.A. (CEPSA)",
+        "periodo": "Histórico hasta 2024",
+        "motivo": "Denominación fundacional histórica de la compañía petrolera desde 1929."
+      }
+    ],
+    "motivoGeneral": "Rebranding corporativo anunciado en octubre de 2024 sustituyendo la marca histórica CEPSA por Moeve.",
+    "tipo": "rebranding"
+  },
+  "B13565007": {
+    "cif": "B13565007",
+    "nombreActual": "PREFADHOR TUBYDER, S.L.",
+    "nombresAnteriores": [
+      {
+        "nombre": "PREFADHOR S.L.",
+        "periodo": "2016 - 2021",
+        "motivo": "Razón social antes de integrar la marca de prefabricados Tubyder en su denominación."
+      }
+    ],
+    "motivoGeneral": "Integración de marca industrial comarcal Tubyder dentro de la razón social de la compañía.",
+    "tipo": "denominacion_comercial"
+  },
+  "B13016415": {
+    "cif": "B13016415",
+    "nombreActual": "INGENIERÍA TÉCNICA DEL HORMIGÓN, S.L.",
+    "divisionesActivas": [
+      {
+        "nombre": "INTEDHOR",
+        "descripcion": "Acrónimo y marca comercial utilizada habitualmente en licitaciones."
+      }
+    ],
+    "nombresAnteriores": [],
+    "motivoGeneral": "Normalización de denominación legal frente al acrónimo comercial INTEDHOR.",
+    "tipo": "denominacion_comercial"
+  },
+  "A27178789": {
+    "cif": "A27178789",
+    "nombreActual": "OHLA SERVICIOS INGESAN, S.A.",
+    "nombresAnteriores": [
+      {
+        "nombre": "OHL SERVICIOS-INGESAN, S.A.",
+        "periodo": "2018 - 2022",
+        "motivo": "Marca corporativa previa a la refundación del grupo constructor como OHLA."
+      }
+    ],
+    "motivoGeneral": "Cambio de marca del conglomerado constructor OHL a OHLA.",
+    "tipo": "rebranding"
+  }
+}

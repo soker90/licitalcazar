@@ -1,0 +1,65 @@
+name: Regeneración limpia y auditoría de BD
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Configurar pnpm
+        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          version: 11.3.0
+          run_install: false
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Instalar dependencias del sistema
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Regenerar, probar y validar sin tocar producción
+        env:
+          DNI_SALT: ${{ secrets.DNI_SALT }}
+        run: |
+          set -Eeuo pipefail
+          mkdir -p audit-output
+
+          cp data/licitaciones_alcazar.db audit-output/licitaciones_alcazar.before.db
+
+          pnpm run rebuild-db
+
+          pnpm test
+          pnpm run validate-db
+
+          cp data/licitaciones_alcazar.db audit-output/licitaciones_alcazar.rebuilt.db
+
+      - name: Comparar snapshots
+        run: |
+          set -Eeuo pipefail
+          node scripts/compare-db-snapshots.js \
+            --before=audit-output/licitaciones_alcazar.before.db \
+            --after=data/licitaciones_alcazar.db \
+            | tee audit-output/compare.txt
+
+      - name: Guardar resultados de auditoría
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: licitaciones-alcazar-rebuild
+          path: audit-output/
+          retention-days: 7

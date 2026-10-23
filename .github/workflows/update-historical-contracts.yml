@@ -1,0 +1,120 @@
+name: Actualización Mensual de Expedientes Históricos Abiertos
+
+on:
+  schedule:
+    - cron: '0 5 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: licitaciones-data-sync
+  cancel-in-progress: false
+
+jobs:
+  update-historical-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: master
+          persist-credentials: false
+
+      - name: Configurar pnpm
+        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - name: Instalar dependencias del sistema
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Detectar años históricos con expedientes abiertos
+        id: years
+        run: |
+          set -Eeuo pipefail
+          YEARS="$(node <<'NODE'
+          const { DatabaseSync } = require('node:sqlite');
+          const db = new DatabaseSync('data/licitaciones_alcazar.db');
+          const currentYear = new Date().getUTCFullYear();
+          const terminal = new Set(['Resuelta', 'Anulada', 'Desierta', 'Formalizada']);
+
+          const rows = db.prepare(`
+            SELECT DISTINCT year, status
+            FROM contracts
+            WHERE year IS NOT NULL
+              AND year < ?
+              AND trim(CAST(year AS TEXT)) != ''
+            ORDER BY year
+          `).all(String(currentYear));
+
+          const years = [...new Set(
+            rows
+              .filter(r => !terminal.has(String(r.status || '').trim()))
+              .map(r => String(r.year).trim())
+              .filter(y => /^\\d{4}$/.test(y))
+          )];
+
+          console.log(years.join(' '));
+          NODE
+          )"
+          echo "Años históricos con expedientes abiertos: ${YEARS:-ninguno}"
+          echo "years=${YEARS}" >> "$GITHUB_OUTPUT"
+
+      - name: Sincronizar años históricos con expedientes abiertos
+        if: steps.years.outputs.years != ''
+        env:
+          DNI_SALT: ${{ secrets.DNI_SALT }}
+        run: |
+          set -Eeuo pipefail
+          pnpm run migrate-db
+          pnpm run migrate-contracting-authorities-config
+          pnpm run migrate-corporate-groups
+          pnpm run migrate-cif-corrections
+          pnpm run migrate-verified-person-mappings
+          pnpm run migrate-corporate-name-history
+          pnpm run migrate-contract-identifiers
+
+          for YEAR in ${{ steps.years.outputs.years }}; do
+            echo "📅 Sincronizando año histórico con expedientes abiertos: ${YEAR}"
+            pnpm run sync -- --year="${YEAR}" --download
+            pnpm run migrate-verified-contract-seeds
+            pnpm run sync-modificaciones -- --year="${YEAR}"
+          done
+
+          pnpm run migrate-naturaleza-economica
+          pnpm run migrate-verified-repairs
+          pnpm run repair-verified-data
+          pnpm run sync-documentos
+          pnpm exec node scripts/classify-award-amount-documents.js
+          pnpm exec node scripts/anonymize-personal-nifs.js
+          pnpm run refresh-resolutions -- --skip-vacuum
+          pnpm run optimize-db -- --skip-vacuum
+          pnpm run validate-db
+
+      - name: Validar base de datos y tests antes del commit
+        run: |
+          set -Eeuo pipefail
+          pnpm test
+          pnpm run validate-db
+
+      - name: Hacer commit y push si hay cambios
+        if: steps.years.outputs.years != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "GitHub Action [Bot]"
+          git config user.email "action@github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): actualizar expedientes históricos abiertos [skip ci]"
+            git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push
+          fi

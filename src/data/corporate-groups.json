@@ -1,0 +1,152 @@
+{
+  "grupo-serveo": {
+    "id": "grupo-serveo",
+    "nombre": "Grupo Serveo",
+    "description": "Conglomerado nacional líder en gestión integral de servicios e instalaciones. Tras la venta en 2021 de la división de servicios de Ferrovial al fondo Portobello Capital, el grupo opera bajo la marca Serveo a través de diversas mercantiles especializadas (Serveo Servicios y Serveo Social).",
+    "ambito": "Nacional / Servicios e Infraestructuras",
+    "cifs": [
+      "A80241789",
+      "B85621159"
+    ],
+    "sede": "Madrid, España",
+    "color": "emerald",
+    "name": "Grupo Serveo",
+    "scope": "Nacional / Servicios e Infraestructuras"
+  },
+  "grupo-acs": {
+    "id": "grupo-acs",
+    "nombre": "Grupo ACS (Actividades de Construcción y Servicios)",
+    "description": "Multinacional española de infraestructuras, edificación y servicios industriales. Su filial IMESAPI gestiona servicios y obras electromecánicas y de alumbrado público en Alcázar.",
+    "ambito": "Multinacional / Infraestructuras",
+    "cifs": [
+      "A28010478",
+      "A80364243",
+      "A15013909"
+    ],
+    "sede": "Madrid, España",
+    "color": "blue",
+    "name": "Grupo ACS (Actividades de Construcción y Servicios)",
+    "scope": "Multinacional / Infraestructuras"
+  },
+  "grupo-totalenergies": {
+    "id": "grupo-totalenergies",
+    "nombre": "Grupo TotalEnergies",
+    "description": "Compañía multienergías global dedicada a la producción y suministro de gas, electricidad y energías renovables. Redenominación corporativa internacional de Total en 2021.",
+    "ambito": "Internacional / Energía",
+    "cifs": [
+      "A87803862"
+    ],
+    "sede": "Courbevoie, Francia / Sede España en Madrid",
+    "color": "amber",
+    "name": "Grupo TotalEnergies",
+    "scope": "Internacional / Energía"
+  },
+  "grupo-sacyr-valoriza": {
+    "id": "grupo-sacyr-valoriza",
+    "nombre": "Grupo Valoriza (antigua filial de Sacyr)",
+    "description": "Compañía de servicios medioambientales especializada en gestión de residuos, limpieza urbana y mantenimiento ambiental (adquirida en 2023 por Morgan Stanley Infrastructure Partners a Sacyr).",
+    "ambito": "Nacional / Servicios Medioambientales",
+    "cifs": [
+      "A28760692",
+      "B72504640"
+    ],
+    "sede": "Madrid, España",
+    "color": "green",
+    "name": "Grupo Valoriza (antigua filial de Sacyr)",
+    "scope": "Nacional / Servicios Medioambientales"
+  },
+  "grupo-naturgy": {
+    "id": "grupo-naturgy",
+    "nombre": "Grupo Naturgy",
+    "description": "Grupo multinacional energético líder en aprovisionamiento y distribución de gas natural y electricidad (anteriormente Gas Natural Fenosa).",
+    "ambito": "Multinacional / Gas y Electricidad",
+    "cifs": [
+      "A61797536",
+      "A99262610"
+    ],
+    "sede": "Madrid, España",
+    "color": "cyan",
+    "name": "Grupo Naturgy",
+    "scope": "Multinacional / Gas y Electricidad"
+  },
+  "grupo-moeve": {
+    "id": "grupo-moeve",
+    "nombre": "Grupo Moeve (antigua CEPSA)",
+    "description": "Compañía energética líder fundada originalmente en 1929 como Compañía Española de Petróleos, S.A. (CEPSA). En octubre de 2024 acometió un histórico cambio de marca pasando a denominarse Moeve para liderar la transición a las energías verdes.",
+    "ambito": "Multinacional / Combustibles y Energía",
+    "cifs": [
+      "A28003119"
+    ],
+    "sede": "Madrid, España",
+    "color": "red",
+    "name": "Grupo Moeve (antigua CEPSA)",
+    "scope": "Multinacional / Combustibles y Energía"
+  },
+  "grupo-ilunion": {
+    "id": "grupo-ilunion",
+    "nombre": "Grupo ILUNION (Grupo Social ONCE)",
+    "description": "Corporación empresarial de iniciativa social de la ONCE que aglutina empresas de servicios integrales, accesibilidad y medio ambiente con enfoque en inclusión laboral de personas con discapacidad.",
+    "ambito": "Nacional / Economía Social",
+    "cifs": [
+      "B11694650"
+    ],
+    "sede": "Madrid, España",
+    "color": "purple",
+    "name": "Grupo ILUNION (Grupo Social ONCE)",
+    "scope": "Nacional / Economía Social"
+  },
+  "grupo-tubyder": {
+    "id": "grupo-tubyder",
+    "nombre": "Grupo Prefadhor Tubyder",
+    "description": "Grupo industrial manchego de referencia en la comarca de Alcázar y Herencia dedicado a la fabricación de prefabricados de hormigón, tuberías y soluciones constructivas.",
+    "ambito": "Comarcal / Prefabricados y Construcción",
+    "cifs": [
+      "B13565007"
+    ],
+    "sede": "Herencia / Alcázar de San Juan, Ciudad Real",
+    "color": "indigo",
+    "name": "Grupo Prefadhor Tubyder",
+    "scope": "Comarcal / Prefabricados y Construcción"
+  },
+  "grupo-comunica": {
+    "id": "grupo-comunica",
+    "nombre": "Grupo Plus Comunica / Comunica Alcázar",
+    "description": "Operador comarcal y productora de servicios de telecomunicación, audiovisual y comunicación local en Alcázar de San Juan y municipios limítrofes.",
+    "ambito": "Comarcal / Medios y Telecomunicaciones",
+    "cifs": [
+      "B13597950",
+      "B13567950"
+    ],
+    "sede": "Alcázar de San Juan, Ciudad Real",
+    "color": "teal",
+    "name": "Grupo Plus Comunica / Comunica Alcázar",
+    "scope": "Comarcal / Medios y Telecomunicaciones"
+  },
+  "grupo-tempo-music": {
+    "id": "grupo-tempo-music",
+    "nombre": "Grupo Tempo Music",
+    "description": "Entidades comerciales comarcales dedicadas a la provisión de equipamiento e instrumentos musicales para bandas, conservatorios y eventos culturales.",
+    "ambito": "Comarcal / Cultura y Música",
+    "cifs": [
+      "B13630140",
+      "B70708417"
+    ],
+    "sede": "Alcázar de San Juan / Campo de Criptana",
+    "color": "violet",
+    "name": "Grupo Tempo Music",
+    "scope": "Comarcal / Cultura y Música"
+  },
+  "grupo-amiab": {
+    "id": "grupo-amiab",
+    "nombre": "Grupo AMIAB",
+    "description": "Asociación Nacional de Discapacidad y Centro Especial de Empleo dedicada a la inclusión social y laboral en Castilla-La Mancha.",
+    "ambito": "Autonómico / Economía Social",
+    "cifs": [
+      "B02307171"
+    ],
+    "sede": "Albacete / Delegaciones en Castilla-La Mancha",
+    "color": "emerald",
+    "name": "Grupo AMIAB",
+    "scope": "Autonómico / Economía Social"
+  }
+}
