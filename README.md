@@ -13,7 +13,7 @@ Instancia de [Adjudica](https://github.com/soker90/adjudica) para la contrataci�
 
 ## Desarrollo y despliegue
 
-En **Settings → Secrets and variables → Actions** de este repositorio, configura el secreto `DNI_SALT`. Lo usan los flujos que anonimizan identificadores personales. No se necesitan otros secretos para los flujos de datos actuales.
+Configura `DNI_SALT` como secreto de Actions en este repositorio y como variable de entorno de producción en el proyecto de Vercel. La aplicación y los flujos de sincronización lo usan para seudonimizar identificadores personales; ambos entornos deben usar el mismo valor estable.
 
 Clona el repositorio con sus submódulos:
 
