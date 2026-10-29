@@ -27,3 +27,16 @@ pnpm dev
 ```
 
 Vercel compila desde la raíz de la instancia y prepara la configuración, logotipo y base de datos antes de construir la aplicación. Los flujos de GitHub Actions ejecutan las tareas de sincronización desde el submódulo y guardan los cambios en `data/`.
+
+## Actualizar Adjudica
+
+Adjudica publica versiones con etiquetas `vX.Y.Z`. Esta instancia conserva la versión exacta en el commit del submódulo. Para actualizarla, ejecuta desde la raíz del repositorio:
+
+```sh
+git -C adjudica fetch --tags origin
+git -C adjudica checkout vX.Y.Z
+git add adjudica
+git commit -m "Actualiza Adjudica a vX.Y.Z"
+```
+
+Revisa y despliega el cambio como cualquier otra actualización del repositorio.
