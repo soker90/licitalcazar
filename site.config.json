@@ -84,5 +84,15 @@
     }
   ],
   "footerDescription": "Portal cívico independiente para la monitorización, análisis y transparencia de la contratación pública en el municipio de Alcázar de San Juan (Ciudad Real). Datos abiertos procedentes directamente de la Plataforma de Contratación del Sector Público (PLACSP).",
-  "classifyIndividualsAsLocal": true
+  "classifyIndividualsAsLocal": true,
+  "fraccionamientoStopWords": [
+    "alcazar",
+    "san",
+    "juan"
+  ],
+  "flujoStopWords": [
+    "alcazar",
+    "juan",
+    "comsermancha"
+  ]
 }
