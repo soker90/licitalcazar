@@ -691,7 +691,8 @@
           },
           {
             "type": "heading",
-            "text": "Concentración de Mercado: Índice Herfindahl-Hirschman (HHI) y Ratios CR5 / CR1"
+            "text": "Concentración de Mercado: Índice Herfindahl-Hirschman (HHI) y Ratios CR5 / CR1",
+            "id": "hhi"
           },
           {
             "type": "paragraph",
@@ -1909,6 +1910,88 @@
       {
         "id": "vigilancia-datos",
         "label": "19. Contratos en Curso y Datos Abiertos (V2)"
+      }
+    ],
+    "indexLinks": [
+      {
+        "id": "fuente-y-actualizacion",
+        "title": "1. Fuente Oficial y Sincronización"
+      },
+      {
+        "id": "cobertura-temporal",
+        "title": "2. Cobertura Temporal"
+      },
+      {
+        "id": "comsermancha",
+        "title": "3. Tratamiento de Comsermancha"
+      },
+      {
+        "id": "oferta-unica",
+        "title": "4. Criterio de Oferta Única"
+      },
+      {
+        "id": "utes",
+        "title": "5. Tratamiento de UTE"
+      },
+      {
+        "id": "division-lotes",
+        "title": "6. División en Lotes y PYMEs (Art. 99)"
+      },
+      {
+        "id": "banderas-rojas",
+        "title": "7. Indicadores de Auditoría"
+      },
+      {
+        "id": "factores-auditoria",
+        "title": "8. Guía Ciudadana de Factores de Auditoría (V2)"
+      },
+      {
+        "id": "hhi",
+        "title": "9. Concentración HHI y CR5"
+      },
+      {
+        "id": "flujo",
+        "title": "9. Flujo y Licitaciones Desiertas"
+      },
+      {
+        "id": "contratos-vivos",
+        "title": "10. Contratos Vivos y Vencimientos"
+      },
+      {
+        "id": "distribucion-tiempos",
+        "title": "11. Tiempos, Mediana y Outliers"
+      },
+      {
+        "id": "evolucion-temporal",
+        "title": "12. Series Temporales y Cobertura LCSP"
+      },
+      {
+        "id": "renovacion-mercado",
+        "title": "13. Renovación de Proveedores y Rotación"
+      },
+      {
+        "id": "calendario-electoral",
+        "title": "14. Calendario Electoral y Ciclo Político"
+      },
+      {
+        "id": "modificados-sobrecostes",
+        "title": "15. Modificados, Sobrecostes y Art. 204/205 LCSP"
+      },
+      {
+        "id": "duracion-efectiva",
+        "title": "16. Duración Registrada vs. Prevista (Art. 29 y 195)"
+      },
+      {
+        "id": "empresas-locales",
+        "title": "17. Empresas Locales vs. Externas y Criterio BORME"
+      },
+      {
+        "id": "verificabilidad",
+        "title": "18. Enlaces y Verificación PLACSP"
+      },
+      {
+        "id": "vigilancia-datos",
+        "title": "19. Contratos en Curso y Datos Abiertos (V2)"
       }
     ]
   },
