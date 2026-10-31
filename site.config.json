@@ -15,7 +15,74 @@
   "localityName": "Alcázar de San Juan",
   "provinceCode": "13",
   "provinceName": "Ciudad Real",
-  "localityAliases": ["Alcazar de San Juan", "Alcázar"],
-  "localSupplierNifs": [],
-  "legacyGrantAuthorityFlagColumn": "is_alcazar"
+  "localityAliases": [
+    "Alcazar de San Juan",
+    "Alcázar"
+  ],
+  "localSupplierNifs": [
+    "B13408349",
+    "A13157029",
+    "B13559349",
+    "B13016415",
+    "B13565007",
+    "B13053129",
+    "B13435789",
+    "B13027164",
+    "B13597950",
+    "B13567950",
+    "B13630140",
+    "B13420047",
+    "B13493911",
+    "B13385190",
+    "B13552948",
+    "B13354949",
+    "B13589411",
+    "B13536842",
+    "B13177381",
+    "B13631908"
+  ],
+  "legacyGrantAuthorityFlagColumn": "is_alcazar",
+  "metadataTitle": "LicitAlcázar · Inteligencia de Contratación Pública en Alcázar de San Juan",
+  "metadataDescription": "Portal cívico independiente de datos abiertos sobre licitaciones, adjudicaciones, contratos menores y gasto público en Alcázar de San Juan (Ciudad Real), basado en los registros de la Plataforma de Contratación del Sector Público (PLACSP).",
+  "metadataKeywords": [
+    "Alcázar de San Juan",
+    "licitaciones",
+    "contratación pública",
+    "adjudicaciones",
+    "Aguas de Alcázar",
+    "Ayuntamiento de Alcázar de San Juan",
+    "Hospital Mancha Centro"
+  ],
+  "heroEyebrow": "Portal de Transparencia y Contratación Municipal",
+  "heroTitle": "Inteligencia de Contratación en Alcázar de San Juan",
+  "heroDescription": "Monitoriza las licitaciones oficiales, adjudicaciones y empresas contratistas del Ayuntamiento de Alcázar de San Juan, sus organismos autónomos, empresas públicas y entidades mancomunadas.",
+  "heroQuickFilters": [
+    {
+      "label": "Ayuntamiento",
+      "query": "Ayuntamiento",
+      "icon": "building"
+    },
+    {
+      "label": "Aguas de Alcázar",
+      "query": "Aguas de Alcázar",
+      "icon": "building"
+    },
+    {
+      "label": "Patronato de Cultura",
+      "query": "Cultura",
+      "icon": "file"
+    },
+    {
+      "label": "Comsermancha",
+      "query": "COMSERMANCHA",
+      "icon": "building"
+    },
+    {
+      "label": "Obras y Proyectos",
+      "query": "Obras",
+      "icon": "building"
+    }
+  ],
+  "footerDescription": "Portal cívico independiente para la monitorización, análisis y transparencia de la contratación pública en el municipio de Alcázar de San Juan (Ciudad Real). Datos abiertos procedentes directamente de la Plataforma de Contratación del Sector Público (PLACSP).",
+  "classifyIndividualsAsLocal": true
 }
