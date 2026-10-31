@@ -24,6 +24,8 @@ assert.ok(!site.headerBrandSuffix, 'the discarded v2 brand suffix must not be di
 assert.equal(site.instanceCreationGuide, false, 'public LicitAlcázar must not expose the instance creation guide');
 assert.ok(site.homeAuditDescription?.includes('gasto público de Alcázar'),
   'the homepage audit description must use the LicitAlcázar wording');
+assert.ok(site.homeAnnualEvolutionDescription?.includes('Alcázar de San Juan'));
+assert.ok(site.homeTopCompaniesDescription?.includes('Alcázar de San Juan'));
 assert.equal(site.analysisPresentation?.scopeLabels?.primary, 'Directa Municipal');
 assert.equal(site.analysisPresentation?.methodologyLinkLabel, 'Criterio Comsermancha y Metodología');
 assert.equal(site.dataPresentation?.scopeLabels?.primary, 'Directa Municipal (Ayto, Aguas, Patronato, IMD)');
