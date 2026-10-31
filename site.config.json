@@ -1289,11 +1289,14 @@
   "homeRiskDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar de San Juan.",
   "analysisPresentation": {
     "scopeLabels": {
-      "primary": "Directa Municipal",
-      "associated": "Indirecta (Mancomunidad)",
-      "all": "Total"
+      "primary": "Directa Municipal"
     },
     "methodologyLinkLabel": "Criterio Comsermancha y Metodología"
   },
-  "homeAuditDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar."
+  "homeAuditDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar.",
+  "dataPresentation": {
+    "scopeLabels": {
+      "primary": "Directa Municipal (Ayto, Aguas, Patronato, IMD)"
+    }
+  }
 }
