@@ -4,7 +4,7 @@
   "siteUrl": "https://licitalcazar.vercel.app",
   "geographicLabel": "Alcázar de San Juan, Ciudad Real",
   "logoPath": "/logo.svg",
-  "logoAlt": "LicitAlcázar",
+  "logoAlt": "A",
   "brandMark": "LA",
   "instanceCreationGuide": false,
   "theme": {
@@ -114,23 +114,32 @@
     "primary": {
       "label": "Solo Ayuntamiento",
       "shortLabel": "Solo Ayuntamiento",
-      "description": "Contratación gestionada directamente por el Ayuntamiento de Alcázar de San Juan y sus organismos locales.",
-      "tooltip": "Gasto gestionado directamente por el Ayuntamiento de Alcázar y sus organismos locales."
+      "description": "Muestra el dinero gestionado exclusivamente por la corporación municipal y sus entes locales (Aguas de Alcázar, Patronato Municipal de Cultura e Instituto Municipal de Deportes).",
+      "tooltip": "Gasto gestionado directamente por el Ayuntamiento de Alcázar y sus organismos locales.",
+      "noteTitle": "Estás consultando: Solo Ayuntamiento de Alcázar de San Juan.",
+      "noteLinkLabel": "¿Por qué separamos el Ayuntamiento y Comsermancha? Ver explicación metodológica",
+      "noteLinkHref": "/metodologia#comsermancha"
     },
     "associated": {
       "enabled": true,
       "label": "Comsermancha (21 municipios)",
       "shortLabel": "Comsermancha",
-      "description": "Servicios mancomunados de recogida y tratamiento de residuos para 21 municipios asociados.",
-      "tooltip": "Servicios mancomunados de recogida y tratamiento de residuos para 21 municipios asociados."
+      "description": "Muestra la contratación de residuos y maquinaria. Aunque tiene su sede central en Alcázar, da servicio comarcal a 21 municipios de Ciudad Real, Toledo y Cuenca, y su coste se comparte entre todas las localidades asociadas.",
+      "tooltip": "Servicios mancomunados de recogida y tratamiento de residuos para 21 municipios asociados.",
+      "noteTitle": "Estás consultando: Mancomunidad Comsermancha.",
+      "noteLinkLabel": "¿Por qué separamos el Ayuntamiento y Comsermancha? Ver explicación metodológica",
+      "noteLinkHref": "/metodologia#comsermancha"
     },
     "all": {
       "label": "Total",
       "shortLabel": "Total",
-      "description": "Suma total de toda la contratación pública oficial registrada en Alcázar de San Juan.",
-      "tooltip": "Suma total de toda la contratación pública oficial registrada en Alcázar de San Juan."
+      "description": "Suma global de todos los contratos oficiales registrados en la Plataforma del Estado (PLACSP): combina el gasto municipal propio con el de la Mancomunidad Comsermancha (21 localidades).",
+      "tooltip": "Suma total de toda la contratación pública oficial registrada en Alcázar de San Juan.",
+      "noteTitle": "Estás consultando: Total de contratación en Alcázar.",
+      "noteLinkLabel": "¿Por qué separamos el Ayuntamiento y Comsermancha? Ver explicación metodológica",
+      "noteLinkHref": "/metodologia#comsermancha"
     },
-    "methodologyLinkLabel": "Consultar metodología"
+    "methodologyLinkLabel": "¿Por qué separamos el Ayuntamiento y Comsermancha? Ver explicación metodológica"
   },
   "homePresentation": {
     "primary": {
@@ -456,6 +465,49 @@
           "STS núm. 1119/2025, de 11 de septiembre de 2025, ECLI:ES:TS:2025:3826. Resuelve una controversia sobre el acceso a la información relativa a la aplicación administrativa BOSCO y a su código fuente.",
           "Las referencias de la LCSP a accesibilidad se circunscriben al ámbito de los medios y procedimientos de contratación pública. La plataforma adopta voluntariamente WCAG y EN 301 549 como referencias técnicas. Su aplicación directa depende de que el titular o el sitio se encuentre dentro de su ámbito subjetivo."
         ]
+      }
+    ],
+    "indexTitle": "Índice de secciones"
+  },
+  "homeLatestPublicationLabel": "Última licitación oficial",
+  "headerBrandSuffix": "v2",
+  "footerDisclaimer": "LicitAlcázar es una iniciativa cívica e independiente de análisis de datos públicos de contratación. Los resultados tienen carácter exclusivamente informativo y metodológico. No constituyen informe de fiscalización, auditoría pública, dictamen jurídico vinculante, resolución administrativa ni declaración de ilegalidad, nulidad, responsabilidad o infracción.",
+  "footerCopyright": "LicitAlcázar · Iniciativa Cívica de Datos Abiertos",
+  "organismsPresentation": {
+    "title": "Organismos y Entidades Públicas de Alcázar",
+    "description": "Directorio oficial de entidades y organismos de contratación dependientes directa o indirectamente del Ayuntamiento de Alcázar de San Juan",
+    "scopeNoteTitle": "Distinción de ámbito institucional:",
+    "scopeNoteText": "Los organismos con Control Directo Municipal (Ayuntamiento, Aguas de Alcázar, Patronato de Cultura, IMD) corresponden en exclusiva a Alcázar de San Juan. La Mancomunidad COMSERMANCHA gestiona los residuos de 21 municipios asociados, por lo que su presupuesto no constituye gasto municipal directo.",
+    "coverageNoteTitle": "Cobertura temporal histórica (2018–2019):",
+    "coverageNoteText": "Los datos provienen de los canales oficiales de PLACSP tras la entrada en vigor de la Ley 9/2017 (LCSP). El menor registro en 2018-2019 se debe a la incorporación escalonada de perfiles instrumentales (como Aguas de Alcázar en 2022) y la integración gradual de los contratos menores telemáticos.",
+    "coverageNoteLinkLabel": "Ver detalle en metodología",
+    "coverageNoteLinkHref": "/metodologia#cobertura-temporal",
+    "directScopeLabel": "Control Directo Municipal",
+    "associatedScopeLabel": "Mancomunidad (21 municipios)",
+    "summaryDirectLabel": "Directa Municipal",
+    "summaryAssociatedLabel": "Mancomunidad COMSERMANCHA",
+    "summaryTotalLabel": "Gasto Público Consolidado",
+    "summaryDirectDescription": "Gasto adjudicado propio municipal",
+    "summaryAssociatedDescription": "Gasto mancomunado (21 municipios)",
+    "summaryTotalDescription": "Total adjudicado formalizado en Alcázar (2018–2026)",
+    "associatedSummaryAuthorityMatch": "COMSERMANCHA",
+    "defaultAuthorityBadge": "En PLACSP desde abril 2018",
+    "authorityBadges": [
+      {
+        "match": "Aguas",
+        "label": "En PLACSP desde marzo 2022"
+      },
+      {
+        "match": "Cultura",
+        "label": "Menores sistemáticos desde 2021"
+      },
+      {
+        "match": "COMSERMANCHA",
+        "label": "En PLACSP desde sept 2018"
+      },
+      {
+        "match": "Deportes",
+        "label": "Contratación centralizada"
       }
     ]
   }
