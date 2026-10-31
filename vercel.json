@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "installCommand": "cd adjudica && pnpm install --frozen-lockfile",
+  "installCommand": "npm install --no-save --no-package-lock && cd adjudica && pnpm install --frozen-lockfile",
   "buildCommand": "cd adjudica && ADJUDICA_INSTANCE_ROOT=.. ADJUDICA_INSTANCE_DB_PATH=../data/licitaciones_alcazar.db node scripts/prepare-instance.js && node scripts/migrate-db.js && pnpm build",
   "outputDirectory": "adjudica/.next"
 }
