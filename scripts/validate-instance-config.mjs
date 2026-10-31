@@ -43,6 +43,7 @@ assert.ok(authorities.some((authority) => /COMSERMANCHA/i.test(authority.name)),
   'the associated authority catalogue must include COMSERMANCHA');
 
 const sections = site.methodology?.sections ?? [];
+const methodologyText = JSON.stringify(site.methodology);
 assert.equal(sections.length, 20, 'the legacy methodology must retain all 20 sections');
 assert.equal(sections.at(-1)?.showInIndex, false, 'the legal sources appendix must remain outside the main index');
 assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'heading')),
@@ -53,7 +54,6 @@ assert.ok(sections.reduce((total, section) => total + (section.blocks?.length ??
   'methodology text outside paragraphs and headings must be preserved');
 assert.ok(methodologyText.includes('Organismo / Entidad') && methodologyText.includes('Ayuntamiento de Alcázar'),
   'the historical coverage table content must be retained');
-const methodologyText = JSON.stringify(site.methodology);
 for (const phrase of [
   'Versión 2.1 · Actualizado 2026',
   'art. 5.1.c RGPD',
