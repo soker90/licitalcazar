@@ -337,6 +337,8 @@
         "id": "distribucion-tiempos",
         "title": "11. Tiempos de Tramitación: Mediana, Percentiles y Corrección de Sesgo",
         "paragraphs": [
+          "Cómputo del «Plazo Total Real» y Cronometría Contractual",
+          "Distribución Temporal por Fases del Ciclo de Vida",
           "En la contratación pública, el tiempo transcurrido entre el cierre del plazo de presentación de ofertas y el decreto de adjudicación no sigue una distribución gaussiana simétrica, sino una distribución fuertemente asimétrica con cola pesada a la derecha ( right-skewed ).",
           "La media aritmética es altamente vulnerable a contratos de tramitación extraordinaria (por ejemplo, recursos especiales o pliegos complejos de limpieza de 329 días), distorsionando al alza la percepción general de lentitud administrativa.",
           "La mediana divide a la mitad el volumen de licitaciones: el 50% de los expedientes se adjudica en ese plazo o menos. El rango intercuartílico (P25 a P75) acota el comportamiento de la mitad central típica de contratos.",
@@ -446,9 +448,11 @@
           "Ley 7/1988 sobre VPO en Euskadi: Se encuentra derogada desde el 26 de septiembre de 2015 y carece de todo ámbito aplicativo en la contratación municipal de Castilla-La Mancha. No debe confundirse con la Ley 7/1988, de 5 de abril, de Funcionamiento del Tribunal de Cuentas (LFTCu) .",
           "Ley 24/2011: Regula únicamente la contratación en los sectores de defensa y seguridad del Estado; es inaplicable a la contratación municipal ordinaria de Alcázar de San Juan.",
           "Resolución de 28 de abril de 2014: Refleja una fiscalización parlamentaria histórica de contratos estatales del ejercicio 2008 tramitados bajo legislación derogada (TRLCSP/LCP). No constituye regla jurídica automática para contratos locales actuales.",
+          "20.4. Régimen del Contrato Menor y Real Decreto-ley 3/2020",
           "La Disposición final primera del Real Decreto-ley 3/2020, de 4 de febrero, reformó el art. 118 de la LCSP suprimiendo la limitación acumulada por contratista que establecía la redacción originaria de la Ley 9/2017 (antiguo art. 118.3, que exigía justificar que el contratista no había suscrito contratos menores que individual o conjuntamente superasen los umbrales).",
           "Bajo el régimen consolidado vigente, la LCSP no establece ningún límite acumulado legal por proveedor. La ley define umbrales de valor estimado de aplicación individual a cada contrato menor (art. 118.1 LCSP: 40.000 € en obras y 15.000 € en suministros y servicios) y prohíbe el fraccionamiento del objeto contractual con la finalidad de eludir los requisitos de publicidad o los relativos al procedimiento de adjudicación (arts. 99.2 y 118.2 LCSP).",
           "En consecuencia, la suma agregada de importes por proveedor y periodo que calcula LicitAlcázar no es una regla ni una infracción tipificada en la ley, sino una convención analítica propia del portal —de modo análogo a la convención metodológica aplicada en la Sección 13 para estimar el volumen empresarial—, concebida exclusivamente para priorizar expedientes en el escrutinio cívico y la revisión documental ciudadana.",
+          "20.5. Sentencia del Tribunal Supremo núm. 1119/2025 (Caso BOSCO)",
           "STS núm. 1119/2025, de 11 de septiembre de 2025, ECLI:ES:TS:2025:3826. Resuelve una controversia sobre el acceso a la información relativa a la aplicación administrativa BOSCO y a su código fuente.",
           "Las referencias de la LCSP a accesibilidad se circunscriben al ámbito de los medios y procedimientos de contratación pública. La plataforma adopta voluntariamente WCAG y EN 301 549 como referencias técnicas. Su aplicación directa depende de que el titular o el sitio se encuentre dentro de su ámbito subjetivo."
         ]
