@@ -41,7 +41,7 @@ for (const phrase of [
   assert.ok(methodologyText.includes(phrase), `methodology is missing: ${phrase}`);
 }
 
-assert.ok(Array.isArray(historical.periodos) && historical.periodos.length > 0,
+assert.ok(Array.isArray(historical.periods) && historical.periodos.length > 0,
   'historical coverage periods must be present');
 assert.ok(Array.isArray(site.localSupplierNifs) && site.localSupplierNifs.length > 0,
   'the local supplier NIF catalogue must be configured');
