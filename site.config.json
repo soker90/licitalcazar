@@ -94,5 +94,20 @@
     "alcazar",
     "juan",
     "comsermancha"
+  ],
+  "associatedAuthorityNameMatch": "COMSERMANCHA",
+  "associatedAuthorityTimeMetricKey": "mediaComsermancha",
+  "estimatedContractEndDateOffsetDays": 1,
+  "localBusinessLabel": "Alcázar de San Juan (Local)",
+  "regionalBusinessLabel": "Castilla-La Mancha (Otras provincias)",
+  "localBusinessSeatLabel": "Alcázar de San Juan (Ciudad Real)",
+  "localIndividualSeatLabel": "Alcázar de San Juan (Autónomo / Residente)",
+  "outsideLocalityLabel": "municipio",
+  "localBusinessDiagnosisTemplate": "El {pctContratosLocales}% de los expedientes adjudicados corresponden a empresas y profesionales con domicilio registral en {localityName} ({pctGastoLocal}% del volumen económico). Por su parte, el {pctGastoNacionalTotal}% del volumen licitado se adjudicó a entidades con sede social fuera del municipio (suministros de electricidad, gestión comarcal de residuos e infraestructuras mayores). El domicilio registral clasifica la sede de la razón social adjudicataria, sin prejuzgar la contratación de empleo, delegaciones o subcontratación en el ámbito local.",
+  "legacyResponseOmitContractFields": [
+    "status_code",
+    "status_code_list_uri",
+    "result_code",
+    "result_code_list_uri"
   ]
 }
