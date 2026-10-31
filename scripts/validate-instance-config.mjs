@@ -49,6 +49,10 @@ assert.ok(sections.some((section) => section.blocks?.some((block) => block.type 
   'nested methodology headings must be preserved');
 assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'listItem')),
   'methodology bullet points must be preserved');
+assert.ok(sections.reduce((total, section) => total + (section.blocks?.length ?? 0), 0) > 300,
+  'methodology text outside paragraphs and headings must be preserved');
+assert.ok(methodologyText.includes('Organismo / Entidad') && methodologyText.includes('Ayuntamiento de Alcázar'),
+  'the historical coverage table content must be retained');
 const methodologyText = JSON.stringify(site.methodology);
 for (const phrase of [
   'Versión 2.1 · Actualizado 2026',
