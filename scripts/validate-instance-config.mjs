@@ -21,6 +21,12 @@ assert.ok(site.homePresentation?.primary && site.homePresentation?.associated &&
   'homepage copy must be configured for all three scopes');
 assert.equal(site.homeLatestPublicationLabel, 'Última licitación oficial');
 assert.ok(!site.headerBrandSuffix, 'the discarded v2 brand suffix must not be displayed');
+assert.equal(site.instanceCreationGuide, false, 'public LicitAlcázar must not expose the instance creation guide');
+assert.ok(site.homeAuditDescription?.includes('gasto público de Alcázar'),
+  'the homepage audit description must use the LicitAlcázar wording');
+assert.equal(site.analysisPresentation?.scopeLabels?.primary, 'Directa Municipal');
+assert.equal(site.analysisPresentation?.methodologyLinkLabel, 'Criterio Comsermancha y Metodología');
+assert.equal(site.dataPresentation?.scopeLabels?.primary, 'Directa Municipal (Ayto, Aguas, Patronato, IMD)');
 assert.ok(site.scopePresentation?.primary?.noteTitle && site.scopePresentation?.associated?.noteTitle,
   'scope notes must explain the selected institutional scope');
 assert.equal(site.organismsPresentation?.title, 'Organismos y Entidades Públicas de Alcázar');
@@ -38,6 +44,11 @@ assert.ok(authorities.some((authority) => /COMSERMANCHA/i.test(authority.name)),
 
 const sections = site.methodology?.sections ?? [];
 assert.equal(sections.length, 20, 'the legacy methodology must retain all 20 sections');
+assert.equal(sections.at(-1)?.showInIndex, false, 'the legal sources appendix must remain outside the main index');
+assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'heading')),
+  'nested methodology headings must be preserved');
+assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'listItem')),
+  'methodology bullet points must be preserved');
 const methodologyText = JSON.stringify(site.methodology);
 for (const phrase of [
   'Versión 2.1 · Actualizado 2026',
