@@ -77,8 +77,11 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      - name: Tests
-        run: pnpm test
+      - name: Tests independientes de la instancia
+        run: pnpm run test:ci
+
+      - name: Validar configuración y catálogos de LicitAlcázar
+        run: node ../scripts/validate-instance-config.mjs
 
       - name: Build
         env:
