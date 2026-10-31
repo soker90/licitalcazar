@@ -755,6 +755,17 @@
         "match": "Deportes",
         "label": "Contratación centralizada"
       }
-    ]
+    ],
+    "associatedIncomeLabel": "venta reciclaje",
+    "profileLinkLabel": "Ver perfil"
+  },
+  "homeRiskDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar de San Juan.",
+  "analysisPresentation": {
+    "scopeLabels": {
+      "primary": "Directa Municipal",
+      "associated": "Indirecta (Mancomunidad)",
+      "all": "Total"
+    },
+    "methodologyLinkLabel": "Criterio Comsermancha y Metodología"
   }
 }
