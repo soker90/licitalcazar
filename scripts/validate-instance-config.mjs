@@ -20,7 +20,7 @@ assert.equal(site.scopePresentation?.all?.label, 'Total');
 assert.ok(site.homePresentation?.primary && site.homePresentation?.associated && site.homePresentation?.all,
   'homepage copy must be configured for all three scopes');
 assert.equal(site.homeLatestPublicationLabel, 'Última licitación oficial');
-assert.equal(site.headerBrandSuffix, 'v2');
+assert.ok(!site.headerBrandSuffix, 'the discarded v2 brand suffix must not be displayed');
 assert.ok(site.scopePresentation?.primary?.noteTitle && site.scopePresentation?.associated?.noteTitle,
   'scope notes must explain the selected institutional scope');
 assert.equal(site.organismsPresentation?.title, 'Organismos y Entidades Públicas de Alcázar');
