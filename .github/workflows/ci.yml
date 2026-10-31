@@ -45,11 +45,11 @@ jobs:
       - name: Instalar dependencias
         run: pnpm install --frozen-lockfile
 
-      - name: Aplicar migraciones de base de datos
-        run: pnpm run migrate-db
-
       - name: Inicializar esquema y catálogos de base de datos
         run: pnpm run init-db
+
+      - name: Aplicar migraciones de base de datos
+        run: pnpm run migrate-db
 
       - name: Aplicar datos contractuales verificados
         run: |
