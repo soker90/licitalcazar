@@ -2051,5 +2051,7 @@
     "scopeLabels": {
       "primary": "Directa Municipal (Ayto, Aguas, Patronato, IMD)"
     }
-  }
+  },
+  "homeAnnualEvolutionDescription": "Volumen presupuestario adjudicado y número de contratos tramitados por año en Alcázar de San Juan",
+  "homeTopCompaniesDescription": "Principales contratistas y proveedores por volumen presupuestario adjudicado en Alcázar de San Juan"
 }
