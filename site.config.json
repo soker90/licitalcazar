@@ -324,6 +324,12 @@
           "Identidad del adjudicatario: se conserva la razón social y CIF individual adjudicado en la resolución oficial.",
           "Expedientes administrativos: cada expediente conserva su numeración, procedimiento y objeto oficial.",
           "Contratos individuales: no se fusionan contratos ni se transfieren obligaciones entre personas jurídicas distintas."
+        ],
+        "anchors": [
+          {
+            "id": "hhi",
+            "paragraphIndex": 37
+          }
         ]
       },
       {
@@ -625,7 +631,89 @@
         ]
       }
     ],
-    "indexTitle": "Índice de secciones"
+    "indexTitle": "Índice de secciones",
+    "indexItems": [
+      {
+        "id": "fuente-y-actualizacion",
+        "label": "1. Fuente Oficial y Sincronización"
+      },
+      {
+        "id": "cobertura-temporal",
+        "label": "2. Cobertura Temporal"
+      },
+      {
+        "id": "comsermancha",
+        "label": "3. Tratamiento de Comsermancha"
+      },
+      {
+        "id": "oferta-unica",
+        "label": "4. Criterio de Oferta Única"
+      },
+      {
+        "id": "utes",
+        "label": "5. Tratamiento de UTE"
+      },
+      {
+        "id": "division-lotes",
+        "label": "6. División en Lotes y PYMEs (Art. 99)"
+      },
+      {
+        "id": "banderas-rojas",
+        "label": "7. Indicadores de Auditoría"
+      },
+      {
+        "id": "factores-auditoria",
+        "label": "8. Guía Ciudadana de Factores de Auditoría (V2)"
+      },
+      {
+        "id": "hhi",
+        "label": "9. Concentración HHI y CR5"
+      },
+      {
+        "id": "flujo",
+        "label": "9. Flujo y Licitaciones Desiertas"
+      },
+      {
+        "id": "contratos-vivos",
+        "label": "10. Contratos Vivos y Vencimientos"
+      },
+      {
+        "id": "distribucion-tiempos",
+        "label": "11. Tiempos, Mediana y Outliers"
+      },
+      {
+        "id": "evolucion-temporal",
+        "label": "12. Series Temporales y Cobertura LCSP"
+      },
+      {
+        "id": "renovacion-mercado",
+        "label": "13. Renovación de Proveedores y Rotación"
+      },
+      {
+        "id": "calendario-electoral",
+        "label": "14. Calendario Electoral y Ciclo Político"
+      },
+      {
+        "id": "modificados-sobrecostes",
+        "label": "15. Modificados, Sobrecostes y Art. 204/205 LCSP"
+      },
+      {
+        "id": "duracion-efectiva",
+        "label": "16. Duración Registrada vs. Prevista (Art. 29 y 195)"
+      },
+      {
+        "id": "empresas-locales",
+        "label": "17. Empresas Locales vs. Externas y Criterio BORME"
+      },
+      {
+        "id": "verificabilidad",
+        "label": "18. Enlaces y Verificación PLACSP"
+      },
+      {
+        "id": "vigilancia-datos",
+        "label": "19. Contratos en Curso y Datos Abiertos (V2)"
+      }
+    ]
   },
   "homeLatestPublicationLabel": "Última licitación oficial",
   "headerBrandSuffix": "v2",
