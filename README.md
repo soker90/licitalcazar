@@ -26,7 +26,7 @@ ADJUDICA_DB_PATH=../data/licitaciones_alcazar.db pnpm run migrate-db
 pnpm dev
 ```
 
-Vercel compila desde la raíz de la instancia y prepara la configuración, logotipo y base de datos antes de construir la aplicación. Los flujos de GitHub Actions ejecutan las tareas de sincronización desde el submódulo y guardan los cambios en `data/`.
+Vercel debe tener como **Root Directory** `.` (la raíz de este repositorio). El `vercel.json` de esta instancia instala las dependencias en el submódulo `adjudica`, prepara aquí la configuración, el logotipo y `data/licitaciones_alcazar.db`, y compila Next.js desde el submódulo. El `package.json` de la raíz declara la misma versión de Next.js para que Vercel detecte el framework antes de ejecutar esos comandos; la aplicación y sus dependencias siguen perteneciendo a Adjudica. No configures `adjudica` como Root Directory: la configuración y los datos de la instancia están fuera de esa carpeta. Los flujos de GitHub Actions ejecutan las tareas de sincronización desde el submódulo y guardan los cambios en `data/`.
 
 ## Actualizar Adjudica
 
