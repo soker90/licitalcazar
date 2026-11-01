@@ -44,6 +44,22 @@ assert.equal(authorities.filter((authority) => authority.scope === 'Indirecta (M
 assert.ok(authorities.some((authority) => /COMSERMANCHA/i.test(authority.name)),
   'the associated authority catalogue must include COMSERMANCHA');
 
+const authorityNames = authorities.map((authority) => authority.name.toLocaleUpperCase());
+for (const item of site.authorityHistory ?? []) {
+  assert.ok(item.match?.trim(), 'authority history entries must define a name match');
+  assert.ok(authorityNames.some((name) => name.includes(item.match.toLocaleUpperCase())),
+    `authority history match does not identify a configured authority: ${item.match}`);
+  assert.ok(item.badge && item.title && item.description && item.detail,
+    `authority history entry must retain its badge and explanatory copy: ${item.match}`);
+}
+for (const item of site.authorityScopeNotices ?? []) {
+  assert.ok(item.match?.trim() && item.title?.trim() && item.text?.trim(),
+    'authority scope notices must define a match, title and explanatory text');
+  assert.ok(authorityNames.some((name) => name.includes(item.match.toLocaleUpperCase())),
+    `authority scope notice match does not identify a configured authority: ${item.match}`);
+  if (item.linkHref) assert.ok(item.linkHref.startsWith('/'), 'authority scope notice links must be local paths');
+}
+
 const sections = site.methodology?.sections ?? [];
 const methodologyText = JSON.stringify(site.methodology);
 assert.equal(sections.length, 20, 'the legacy methodology must retain all 20 sections');
