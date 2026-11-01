@@ -2053,5 +2053,52 @@
     }
   },
   "homeAnnualEvolutionDescription": "Volumen presupuestario adjudicado y número de contratos tramitados por año en Alcázar de San Juan",
-  "homeTopCompaniesDescription": "Principales contratistas y proveedores por volumen presupuestario adjudicado en Alcázar de San Juan"
+  "homeTopCompaniesDescription": "Principales contratistas y proveedores por volumen presupuestario adjudicado en Alcázar de San Juan",
+  "authorityHistory": [
+    {
+      "match": "Aguas de Alcázar",
+      "badge": "Alta en PLACSP: Marzo 2022",
+      "title": "Integración en la Plataforma Estatal desde marzo de 2022",
+      "description": "Aguas de Alcázar (empresa mixta municipal) comenzó a publicar sus licitaciones en la Plataforma de Contratación del Sector Público a partir del 28 de marzo de 2022.",
+      "detail": "La ausencia de contratos registrados entre 2018 y 2021 responde a que sus expedientes se tramitaban previamente en el portal web corporativo propio de la empresa de aguas y no en los canales abiertos unificados de PLACSP."
+    },
+    {
+      "match": "Patronato Municipal de Cultura",
+      "badge": "Volcado sistemático: 2020-2021",
+      "title": "Digitalización e integración de contratos menores desde 2020-2021",
+      "description": "En los ejercicios 2018 y 2019 únicamente se volcaron a la plataforma estatal licitaciones mayores aisladas (1 contrato anual).",
+      "detail": "A partir de 2020 y consolidado en 2021, el Patronato incorporó el volcado sistemático de la totalidad de sus contratos menores de programación artística, espectáculos festivos y eventos culturales, pasando a registrar entre 55 y 80 contratos anuales."
+    },
+    {
+      "match": "Ayuntamiento de Alcázar de San Juan",
+      "badge": "En PLACSP desde abril 2018",
+      "title": "Entrada en vigor de la Ley 9/2017 y volcado progresivo de contratos menores",
+      "description": "Los registros en la plataforma estatal comienzan el 17 de abril de 2018 con la entrada en vigor de la Ley 9/2017 de Contratos del Sector Público (LCSP).",
+      "detail": "El menor número de contratos en 2018 (93) y 2019 (104) respecto a ejercicios posteriores (~150-195 al año) refleja la implantación técnica gradual de los sistemas de administración electrónica municipal para la remisión periódica y masiva de contratos menores a PLACSP, y no una menor actividad del consistorio."
+    },
+    {
+      "match": "COMSERMANCHA",
+      "badge": "En PLACSP desde septiembre 2018",
+      "title": "Entidad supramunicipal en PLACSP desde finales de 2018",
+      "description": "La Mancomunidad comenzó a publicar en la plataforma estatal en septiembre de 2018 al adaptarse a las exigencias de la LCSP 9/2017.",
+      "detail": "Además de la cobertura temporal iniciada a finales de 2018, sus contratos corresponden a la gestión de residuos y servicios compartidos entre 21 municipios asociados, por lo que su presupuesto no constituye gasto municipal directo exclusivo de Alcázar."
+    },
+    {
+      "match": "Instituto Municipal de Deportes",
+      "badge": "Contratación centralizada",
+      "title": "Gestión centralizada mediante el Ayuntamiento de Alcázar",
+      "description": "El Instituto Municipal de Deportes (IMD) tramita la práctica totalidad de sus inversiones, obras y suministros a través de la contratación centralizada del propio Ayuntamiento de Alcázar de San Juan.",
+      "detail": "Este perfil se reserva para procedimientos y acuerdos marco específicos de gestión deportiva autónoma, lo que explica un volumen anual estable y acotado (entre 3 y 7 expedientes al año)."
+    }
+  ],
+  "authorityScopeNotices": [
+    {
+      "match": "COMSERMANCHA",
+      "title": "Entidad Supramunicipal Mancomunada (21 municipios asociados)",
+      "badge": "Gasto Mancomunado",
+      "text": "La Mancomunidad de Servicios COMSERMANCHA tiene su sede en Alcázar de San Juan (NIF P1300024E), pero gestiona los residuos y servicios de 21 municipios de las provincias de Ciudad Real, Toledo y Cuenca. Su volumen de contratación ({volume}) no es atribuible en su totalidad al Ayuntamiento ni a la ciudadanía de Alcázar, sino que se sufraga de forma compartida entre los municipios miembros.",
+      "linkLabel": "Consultar detalle metodológico y distribución de gasto",
+      "linkHref": "/metodologia#comsermancha"
+    }
+  ]
 }
