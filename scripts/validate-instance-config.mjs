@@ -78,6 +78,15 @@ assert.ok(sections.some((section) => section.blocks?.some((block) => block.type 
   'nested methodology headings must be preserved');
 assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'listItem')),
   'methodology bullet points must be preserved');
+const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
+assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
+for (const table of methodologyTables) {
+  assert.ok(Array.isArray(table.headers) && table.headers.length > 0, 'methodology tables must define headers');
+  assert.ok(Array.isArray(table.rows) && table.rows.length > 0, 'methodology tables must define rows');
+  for (const row of table.rows) {
+    assert.equal(row.length, table.headers.length, 'every methodology table row must match the header count');
+  }
+}
 assert.ok(sections.reduce((total, section) => total + (section.blocks?.length ?? 0), 0) > 300,
   'methodology text outside paragraphs and headings must be preserved');
 assert.ok(methodologyText.includes('Organismo / Entidad') && methodologyText.includes('Ayuntamiento de Alcázar'),
