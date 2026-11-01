@@ -50,6 +50,13 @@ assert.equal(sections.length, 20, 'the legacy methodology must retain all 20 sec
 assert.equal(site.methodology?.indexLinks?.length, 20, 'the methodology index must preserve all 20 legacy links');
 assert.equal(site.methodology?.indexLinks?.[0]?.title, '1. Fuente Oficial y Sincronización');
 assert.equal(site.methodology?.indexLinks?.[8]?.id, 'hhi', 'the HHI subsection must keep its direct anchor');
+const methodologyAnchorIds = new Set(sections.flatMap((section) => [
+  section.id,
+  ...(section.blocks ?? []).map((block) => block.id),
+]).filter(Boolean));
+for (const item of site.methodology?.indexLinks ?? []) {
+  assert.ok(methodologyAnchorIds.has(item.id), `methodology index target does not exist: #${item.id}`);
+}
 assert.equal(sections.at(-1)?.showInIndex, false, 'the legal sources appendix must remain outside the main index');
 assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'heading')),
   'nested methodology headings must be preserved');
