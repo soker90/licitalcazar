@@ -44,6 +44,12 @@ assert.equal(authorities.filter((authority) => authority.scope === 'Indirecta (M
 assert.ok(authorities.some((authority) => /COMSERMANCHA/i.test(authority.name)),
   'the associated authority catalogue must include COMSERMANCHA');
 
+const comsermanchaAuthority = authorities.find((authority) => /COMSERMANCHA/i.test(authority.name));
+assert.equal(comsermanchaAuthority?.nif, 'P1300031J', 'COMSERMANCHA must use its official NIF');
+const comsermanchaNotice = (site.authorityScopeNotices ?? []).find((item) => /COMSERMANCHA/i.test(item.match ?? ''));
+assert.ok(comsermanchaNotice?.text.includes(comsermanchaAuthority.nif),
+  'the COMSERMANCHA scope notice must display the NIF from the authority catalogue');
+
 const authorityNames = authorities.map((authority) => authority.name.toLocaleUpperCase());
 for (const item of site.authorityHistory ?? []) {
   assert.ok(item.match?.trim(), 'authority history entries must define a name match');
