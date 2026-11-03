@@ -2,8 +2,11 @@
   "private": true,
   "packageManager": "pnpm@11.3.0",
   "dependencies": {
-    "next": "15.5.28",
-    "react": "19.1.10",
-    "react-dom": "19.1.10"
+    "next": "15.5.28"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.30"
+    }
   }
 }
