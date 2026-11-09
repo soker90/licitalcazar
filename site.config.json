@@ -1868,28 +1868,48 @@
             "text": "**Resolución de 28 de abril de 2014:** Refleja una fiscalización parlamentaria histórica de contratos estatales del ejercicio 2008 tramitados bajo legislación **derogada** (TRLCSP/LCP). No constituye regla jurídica automática para contratos locales actuales."
           },
           {
-            "type": "subcard",
-            "title": "20.4. Régimen del Contrato Menor y Real Decreto-ley 3/2020",
-            "text": "La Disposición final primera del Real Decreto-ley 3/2020, de 4 de febrero, reformó el art. 118 de la LCSP suprimiendo la limitación acumulada por contratista que establecía la redacción originaria de la Ley 9/2017 (antiguo art. 118.3, que exigía justificar que el contratista no había suscrito contratos menores que individual o conjuntamente superasen los umbrales). • Bajo el régimen consolidado vigente, la LCSP no establece ningún límite acumulado legal por proveedor. La ley define umbrales de valor estimado de aplicación individual a cada contrato menor (art. 118.1 LCSP: **40.000 €** en obras y **15.000 €** en suministros y servicios) y prohíbe el fraccionamiento del objeto contractual con la finalidad de eludir los requisitos de publicidad o los relativos al procedimiento de adjudicación (arts. 99.2 y 118.2 LCSP). • En consecuencia, la suma agregada de importes por proveedor y periodo que calcula LicitAlcázar no es una regla ni una infracción tipificada en la ley, sino una **convención analítica propia del portal** —de modo análogo a la convención metodológica aplicada en la Sección 13 para estimar el volumen empresarial—, concebida exclusivamente para priorizar expedientes en el escrutinio cívico y la revisión documental ciudadana.",
-            "columns": 2,
-            "span": "full",
-            "tone": "slate"
+            "type": "heading",
+            "text": "20.4. Régimen del Contrato Menor y Real Decreto-ley 3/2020",
+            "card": {
+              "tone": "amber",
+              "layout": "featured"
+            }
           },
           {
-            "type": "miniCard",
-            "title": "20.5. Sentencia del Tribunal Supremo núm. 1119/2025 (Caso BOSCO)",
-            "text": "STS núm. 1119/2025, de 11 de septiembre de 2025, ECLI:ES:TS:2025:3826. Resuelve una controversia sobre el acceso a la información relativa a la aplicación administrativa BOSCO y a su código fuente.",
-            "columns": 2,
-            "tone": "slate",
-            "span": "full"
+            "type": "paragraph",
+            "text": "La Disposición final primera del Real Decreto-ley 3/2020, de 4 de febrero, reformó el art. 118 de la LCSP suprimiendo la limitación acumulada por contratista que establecía la redacción originaria de la Ley 9/2017 (antiguo art. 118.3, que exigía justificar que el contratista no había suscrito contratos menores que individual o conjuntamente superasen los umbrales)."
           },
           {
-            "type": "miniCard",
-            "title": "20.6. Criterios Técnicos de Accesibilidad",
-            "text": "Las referencias de la LCSP a accesibilidad se circunscriben al ámbito de los medios y procedimientos de contratación pública. La plataforma adopta voluntariamente WCAG y EN 301 549 como referencias técnicas. Su aplicación directa depende de que el titular o el sitio se encuentre dentro de su ámbito subjetivo.",
-            "columns": 2,
-            "tone": "slate",
-            "span": "full"
+            "type": "paragraph",
+            "text": "Bajo el régimen consolidado vigente, la LCSP no establece ningún límite acumulado legal por proveedor. La ley define umbrales de valor estimado de aplicación individual a cada contrato menor (art. 118.1 LCSP: **40.000 €** en obras y **15.000 €** en suministros y servicios) y prohíbe el fraccionamiento del objeto contractual con la finalidad de eludir los requisitos de publicidad o los relativos al procedimiento de adjudicación (arts. 99.2 y 118.2 LCSP)."
+          },
+          {
+            "type": "paragraph",
+            "text": "En consecuencia, la suma agregada de importes por proveedor y periodo que calcula LicitAlcázar no es una regla ni una infracción tipificada en la ley, sino una **convención analítica propia del portal** —de modo análogo a la convención metodológica aplicada en la Sección 13 para estimar el volumen empresarial—, concebida exclusivamente para priorizar expedientes en el escrutinio cívico y la revisión documental ciudadana."
+          },
+          {
+            "type": "heading",
+            "text": "20.5. Sentencia del Tribunal Supremo núm. 1119/2025 (Caso BOSCO)",
+            "card": {
+              "tone": "blue",
+              "layout": "featured"
+            }
+          },
+          {
+            "type": "paragraph",
+            "text": "STS núm. 1119/2025, de 11 de septiembre de 2025, ECLI:ES:TS:2025:3826. Resuelve una controversia sobre el acceso a la información relativa a la aplicación administrativa BOSCO y a su código fuente."
+          },
+          {
+            "type": "heading",
+            "text": "20.6. Criterios Técnicos de Accesibilidad",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
+          },
+          {
+            "type": "paragraph",
+            "text": "Las referencias de la LCSP a accesibilidad se circunscriben al ámbito de los medios y procedimientos de contratación pública. La plataforma adopta voluntariamente WCAG y EN 301 549 como referencias técnicas. Su aplicación directa depende de que el titular o el sitio se encuentre dentro de su ámbito subjetivo."
           },
           {
             "type": "paragraph",
