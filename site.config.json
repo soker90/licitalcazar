@@ -575,99 +575,103 @@
             "text": "Una *Bandera Roja (Red Flag)* no constituye por sí sola una prueba de ilegalidad ni una acusación de corrupción, sino un **indicador estadístico de riesgo o anomalía** que aconseja una revisión pormenorizada por parte de los servicios de intervención, medios de comunicación o ciudadanía activa."
           },
           {
-            "type": "paragraph",
-            "text": "Indicador 1 Falta de Concurrencia"
-          },
-          {
             "type": "heading",
-            "text": "**Oferta Única** en Contratos Mayores"
+            "text": "**Oferta Única** en Contratos Mayores",
+            "card": {
+              "eyebrow": "Indicador 1",
+              "badge": "Falta de Concurrencia",
+              "tone": "amber",
+              "layout": "compact"
+            }
           },
           {
             "type": "paragraph",
             "text": "Contratos de licitación abierta o competitiva donde sólo concurrió un único licitador. Mide el riesgo de pliegos dirigidos o falta de concurrencia efectiva en el mercado local."
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "procedimiento ≠ 'Contrato menor' ∧ `num_ofertas` = 1"
           },
           {
-            "type": "paragraph",
-            "text": "Indicador 2 0% Rebaja"
-          },
-          {
             "type": "heading",
-            "text": "Al Máximo Presupuestado (Baja Cero)"
+            "text": "Al Máximo Presupuestado (Baja Cero)",
+            "card": {
+              "eyebrow": "Indicador 2",
+              "badge": "0% Rebaja",
+              "tone": "emerald",
+              "layout": "compact"
+            }
           },
           {
             "type": "paragraph",
             "text": "Expedientes donde la adjudicación coincide con el 100% del Presupuesto Base de Licitación (PBL) con margen de redondeo (±0,05 €), sin reducción económica respecto al importe licitado. Constituye una señal analítica puramente descriptiva y preventiva que refleja ausencia de baja en el precio adjudicado, sin que de ello pueda deducirse por sí solo connivencia o conocimiento previo de concurrencia."
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "|importe_adjudicacion - importe_sin_iva| ≤ 0.05 ∧ importe_sin_iva > 0"
           },
           {
-            "type": "paragraph",
-            "text": "Indicador 3 Proximidad Umbral"
-          },
-          {
             "type": "heading",
-            "text": "Contratos Menores al 90% del Límite Legal"
+            "text": "Contratos Menores al 90% del Límite Legal",
+            "card": {
+              "eyebrow": "Indicador 3",
+              "badge": "Proximidad Umbral",
+              "tone": "orange",
+              "layout": "compact"
+            }
           },
           {
             "type": "paragraph",
             "text": "Contratos menores adjudicados mediante el régimen de contratación menor conforme al art. 118 de la LCSP por importes superiores a 13.500 € en servicios/suministros (límite **15.000 €**) o 36.000 € en obras (límite **40.000 €**), situándose en el segmento superior del umbral del precepto."
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "(tipo = 'Obras' ∧ imp ≥ 36.000€) ∨ (tipo ≠ 'Obras' ∧ imp ≥ 13.500€)"
           },
           {
-            "type": "paragraph",
-            "text": "Indicador 4 Control Reforzado"
-          },
-          {
             "type": "heading",
-            "text": "Financiación con Fondos Europeos (PRTR / UE)"
+            "text": "Financiación con Fondos Europeos (PRTR / UE)",
+            "card": {
+              "eyebrow": "Indicador 4",
+              "badge": "Control Reforzado",
+              "tone": "blue",
+              "layout": "compact"
+            }
           },
           {
             "type": "paragraph",
             "text": "Contratos cofinanciados mediante fondos NextGenerationEU, FEDER o Fondo Social Europeo. Requieren controles adicionales antifraude y análisis de titularidad real (herramienta MINERVA)."
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "financiacion_ue IN ('1', 'EU', 'FEDER', 'PRTR')"
           },
           {
-            "type": "paragraph",
-            "text": "Indicador 5 (Económico / Riesgo) Art. 100, 101 y 149 LCSP"
-          },
-          {
             "type": "heading",
-            "text": "Descuento Significativo o Baja Acusada respecto al PBL (Art. 149 LCSP)"
+            "text": "Descuento Significativo o Baja Acusada respecto al PBL (Art. 149 LCSP)",
+            "card": {
+              "eyebrow": "Indicador 5 (Económico / Riesgo)",
+              "badge": "Art. 100, 101 y 149 LCSP",
+              "tone": "red",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "Este indicador detecta expedientes adjudicados con una rebaja económica sustancial respecto al presupuesto de licitación. El porcentaje calculado constituye una **señal analítica de revisión preventiva** y no una declaración jurídica de anormalidad ni temeridad. La presunción formal de anormalidad solo puede determinarse conforme a los parámetros fijados en los pliegos y requiere un trámite preceptivo de audiencia y justificación contradictoria ante la mesa de contratación (art. 149.4 LCSP)."
           },
           {
-            "type": "paragraph",
-            "text": "Distinción Preceptiva: PBL vs. VEC"
-          },
-          {
-            "type": "paragraph",
+            "type": "subcard",
+            "title": "Distinción Preceptiva: PBL vs. VEC",
             "text": "• **PBL (Art. 100 LCSP):** Presupuesto Base de Licitación. Límite máximo de `gasto` para el periodo inicial ordinario del contrato (<cac:BudgetAmount>). Es el único denominador válido para medir la baja licitada. · • **VEC (Art. 101 LCSP):** Valor Estimado del Contrato. Engloba el periodo inicial más todas las prórrogas previstas y modificaciones contractuales (hasta un 20%). Nunca incluye IVA. Utilizar el VEC en el denominador generaría porcentajes de baja artificialmente inflados en contratos plurianuales."
           },
           {
-            "type": "paragraph",
-            "text": "Régimen de Concurrencia (Art. 149 LCSP y Art. 85 RGLCAP)"
-          },
-          {
-            "type": "paragraph",
+            "type": "subcard",
+            "title": "Régimen de Concurrencia (Art. 149 LCSP y Art. 85 RGLCAP)",
             "text": "• **1 único licitador (N=1):** No existe media de ofertas sobre la que calcular desviación estándar. Rige el umbral fijado en el PCAP o subsidiariamente el 25% del art. 85 RGLCAP sobre el PBL. · • **2 o más licitadores (N≥2):** La presunción legal de anormalidad se mide contra la media de ofertas válidas. Dado que los feeds sindicados de PLACSP *solo publican la oferta ganadora*, el sistema emite una señal preventiva sobre PBL y advierte de la limitación de la fuente de datos."
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "**Fórmula canónica:** Baja = (PBL_sin_IVA - Adjudicación_sin_IVA) / PBL_sin_IVA"
           },
           {
@@ -675,12 +679,14 @@
             "text": "* Ambas magnitudes son homogéneas y corresponden a la Base Imponible sin impuestos. Se detectan y segregan expedientes con tarifas o precios unitarios (ej. combustible o reparaciones) para evitar distorsiones del 99%."
           },
           {
-            "type": "paragraph",
-            "text": "Indicador 6 (Agregado) Art. 99.2 y 118 LCSP"
-          },
-          {
             "type": "heading",
-            "text": "Acumulación de Contratos Menores y Posibles Coincidencias"
+            "text": "Acumulación de Contratos Menores y Posibles Coincidencias",
+            "card": {
+              "eyebrow": "Indicador 6 (Agregado)",
+              "badge": "Art. 99.2 y 118 LCSP",
+              "tone": "red",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
@@ -691,25 +697,30 @@
             "text": "El sistema clasifica las acumulaciones en **4 niveles diferenciados**: 🟢 *Recurrente periódico* (renovación anual ordinaria), 🟡 *Recurrente mediante contratos menores* (atención reiterada de necesidades estructurales según doctrina OIReScon), 🟠 *Patrón que merece revisión* (prestaciones heterogéneas o vinculadas a eventos) y 🔴 *Posible fraccionamiento* (ventana corta y alta similitud funcional que exige revisión prioritaria)."
           },
           {
-            "type": "paragraph",
-            "text": "**Ventana Deslizante 365d** Suma móvil backwards de 365 días con fusión de ventanas candidatas solapadas en tramos disjuntos."
+            "type": "miniCard",
+            "title": "Ventana Deslizante 365d",
+            "text": "Suma móvil backwards de 365 días con fusión de ventanas candidatas solapadas en tramos disjuntos."
           },
           {
-            "type": "paragraph",
-            "text": "**Similitud Textual Jaccard** Análisis léxico de coincidencia de objeto sin stopwords y refuerzo por coincidencia de código CPV."
+            "type": "miniCard",
+            "title": "Similitud Textual Jaccard",
+            "text": "Análisis léxico de coincidencia de objeto sin stopwords y refuerzo por coincidencia de código CPV."
           },
           {
-            "type": "paragraph",
-            "text": "**Resolución Corporativa** Agrupación por identidad corporativa canónica (resolución de cambios de marca o razón social, grupos filiales y CIFs)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Indicador 7 (Económico / Competencia) CNMC / Antitrust"
+            "type": "miniCard",
+            "title": "Resolución Corporativa",
+            "text": "Agrupación por identidad corporativa canónica (resolución de cambios de marca o razón social, grupos filiales y CIFs)."
           },
           {
             "type": "heading",
             "text": "Concentración de Mercado: Índice Herfindahl-Hirschman (HHI) y Ratios CR5 / CR1",
-            "id": "hhi"
+            "id": "hhi",
+            "card": {
+              "eyebrow": "Indicador 7 (Económico / Competencia)",
+              "badge": "CNMC / Antitrust",
+              "tone": "blue",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
