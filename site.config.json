@@ -1309,28 +1309,25 @@
             "text": "La monitorización de contratos vivos permite conocer en tiempo real qué prestaciones públicas continúan activas en Alcázar de San Juan, quién es el contratista a cargo y cuándo concluye su periodo de vigencia."
           },
           {
-            "type": "paragraph",
-            "text": "**1. Cálculo del Vencimiento Inicial**"
+            "type": "miniCard",
+            "title": "1. Cálculo del Vencimiento Inicial",
+            "text": "Se toma la fecha formal de adjudicación (o formalización/publicación) y se suma la duración estipulada en los pliegos (años, meses o días) codificada en los datos oficiales de PLACSP.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Se toma la fecha formal de adjudicación (o formalización/publicación) y se suma la duración estipulada en los pliegos (años, meses o días) codificada en los datos oficiales de PLACSP."
+            "type": "miniCard",
+            "title": "2. Régimen de Prórrogas (Art. 29 LCSP)",
+            "text": "Los contratos de servicios y suministros de carácter periódico son legalmente prorrogables hasta un máximo general de 5 años. Los contratos menores no admiten prórroga (art. 29.8 LCSP).",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Régimen de Prórrogas (Art. 29 LCSP)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Los contratos de servicios y suministros de carácter periódico son legalmente prorrogables hasta un máximo general de 5 años. Los contratos menores no admiten prórroga (art. 29.8 LCSP)."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Aviso de Frescura de Datos**"
-          },
-          {
-            "type": "paragraph",
-            "text": "En el ámbito municipal, las prórrogas aprobadas por Decreto o acuerdo plenario pueden tardar semanas en publicarse formalmente en PLACSP, por lo que las fechas representan el calendario contractual mínimo consolidado."
+            "type": "miniCard",
+            "title": "3. Aviso de Frescura de Datos",
+            "text": "En el ámbito municipal, las prórrogas aprobadas por Decreto o acuerdo plenario pueden tardar semanas en publicarse formalmente en PLACSP, por lo que las fechas representan el calendario contractual mínimo consolidado.",
+            "columns": 3,
+            "tone": "slate"
           }
         ]
       },
@@ -1353,28 +1350,25 @@
             "text": "En la contratación pública, el tiempo transcurrido entre el cierre del plazo de presentación de ofertas y el decreto de adjudicación no sigue una distribución gaussiana simétrica, sino una **distribución fuertemente asimétrica con cola pesada a la derecha** (*right-skewed*)."
           },
           {
-            "type": "paragraph",
-            "text": "**1. El Problema de la Media**"
+            "type": "miniCard",
+            "title": "1. El Problema de la Media",
+            "text": "La media aritmética es altamente vulnerable a contratos de tramitación extraordinaria (por ejemplo, recursos especiales o pliegos complejos de limpieza de 329 días), distorsionando al alza la percepción general de lentitud administrativa.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "La media aritmética es altamente vulnerable a contratos de tramitación extraordinaria (por ejemplo, recursos especiales o pliegos complejos de limpieza de 329 días), distorsionando al alza la percepción general de lentitud administrativa."
+            "type": "miniCard",
+            "title": "2. Mediana (P50) e Intervalo IQR",
+            "text": "La mediana divide a la mitad el volumen de licitaciones: el **50%** de los expedientes se adjudica en ese plazo o menos. El rango intercuartílico (P25 a P75) acota el comportamiento de la mitad central típica de contratos.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Mediana (P50) e Intervalo IQR**"
-          },
-          {
-            "type": "paragraph",
-            "text": "La mediana divide a la mitad el volumen de licitaciones: el **50%** de los expedientes se adjudica en ese plazo o menos. El rango intercuartílico (P25 a P75) acota el comportamiento de la mitad central típica de contratos."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Regla de Outliers de Tukey**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Se catalogan estadísticamente como valores atípicos (outliers) aquellos expedientes cuya duración excede el umbral de `P75 + 1.5 × IQR`, permitiendo aislar con precisión qué licitaciones sufrieron demoras extraordinarias."
+            "type": "miniCard",
+            "title": "3. Regla de Outliers de Tukey",
+            "text": "Se catalogan estadísticamente como valores atípicos (outliers) aquellos expedientes cuya duración excede el umbral de `P75 + 1.5 × IQR`, permitiendo aislar con precisión qué licitaciones sufrieron demoras extraordinarias.",
+            "columns": 3,
+            "tone": "slate"
           }
         ]
       },
@@ -1397,28 +1391,25 @@
             "text": "La foto fija de un ejercicio fiscal puede estar condicionada por contratos plurianuales extraordinarios o coyunturas presupuestarias puntuales. Para evaluar la calidad democrática y la eficiencia del `gasto` público municipal, **la tendencia interanual es el elemento probatorio central**."
           },
           {
-            "type": "paragraph",
-            "text": "**1. Cobertura Plena vs Parcial**"
+            "type": "miniCard",
+            "title": "1. Cobertura Plena vs Parcial",
+            "text": "Con la entrada en vigor de la ****Ley 9/2017 de Contratos del Sector Público (LCSP)** en marzo de 2018**, la publicación de todas las licitaciones (incluyendo contratos menores) en la Plataforma de Contratación del Sector Público se convirtió en preceptiva y vinculante. Por ello, las series a partir de 2018 presentan **cobertura completa según los registros PLACSP incluidos en nuestra extracción desde 2018**. Los registros previos a 2018 corresponden a publicaciones voluntarias o históricas parciales.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Con la entrada en vigor de la ****Ley 9/2017 de Contratos del Sector Público (LCSP)** en marzo de 2018**, la publicación de todas las licitaciones (incluyendo contratos menores) en la Plataforma de Contratación del Sector Público se convirtió en preceptiva y vinculante. Por ello, las series a partir de 2018 presentan **cobertura completa según los registros PLACSP incluidos en nuestra extracción desde 2018**. Los registros previos a 2018 corresponden a publicaciones voluntarias o históricas parciales."
+            "type": "miniCard",
+            "title": "2. Asociación Descriptiva Competencia-Ahorro",
+            "text": "El comparador multiserie permite contrastar el **% de oferta única** con la **baja media (%)**. Se trata de una asociación descriptiva observada en los datos entre concurrencia y rebaja media sobre el presupuesto base de licitación. *Correlación no implica causalidad*: las variaciones en los porcentajes de baja pueden obedecer a fluctuaciones sectoriales, inflación de costes o heterogeneidad en los tipos de contrato, sin que quepa atribuir mecánicamente causalidad exclusiva al nivel de concurrencia.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Asociación Descriptiva Competencia-Ahorro**"
-          },
-          {
-            "type": "paragraph",
-            "text": "El comparador multiserie permite contrastar el **% de oferta única** con la **baja media (%)**. Se trata de una asociación descriptiva observada en los datos entre concurrencia y rebaja media sobre el presupuesto base de licitación. *Correlación no implica causalidad*: las variaciones en los porcentajes de baja pueden obedecer a fluctuaciones sectoriales, inflación de costes o heterogeneidad en los tipos de contrato, sin que quepa atribuir mecánicamente causalidad exclusiva al nivel de concurrencia."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Dinamismo de Proveedores**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Al calcular el **número de proveedores distintos** mediante el motor de resolución canónica (que consolida NIFs, denominaciones con erratas y absorbe filiales de grupos corporativos y UTEs), la serie refleja fielmente si el ecosistema empresarial se diversifica o se concentra en los mismos actores año tras año."
+            "type": "miniCard",
+            "title": "3. Dinamismo de Proveedores",
+            "text": "Al calcular el **número de proveedores distintos** mediante el motor de resolución canónica (que consolida NIFs, denominaciones con erratas y absorbe filiales de grupos corporativos y UTEs), la serie refleja fielmente si el ecosistema empresarial se diversifica o se concentra en los mismos actores año tras año.",
+            "columns": 3,
+            "tone": "slate"
           }
         ]
       },
@@ -1442,28 +1433,25 @@
             "text": "Un mercado de contratación municipal abierto se caracteriza por una entrada regular de nuevos operadores económicos (pymes y autónomos) que compiten con las firmas consolidadas. Cuando la renovación cae y el `gasto` se concentra entre empresas recurrentes, se reduce la pluralidad de opciones y conviene evaluar posibles barreras de acceso."
           },
           {
-            "type": "paragraph",
-            "text": "**1. Detección del Primer Contrato**"
+            "type": "miniCard",
+            "title": "1. Detección del Primer Contrato",
+            "text": "Mediante particionado analítico cronológico sobre el conjunto histórico municipal (desde marzo de 2018 con la entrada de la LCSP), se identifica de forma inequívoca el **primer contrato adjudicado** a cada empresa (por identificador canónico o NIF), evitando duplicidades por errores tipográficos o filiales corporativas.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Mediante particionado analítico cronológico sobre el conjunto histórico municipal (desde marzo de 2018 con la entrada de la LCSP), se identifica de forma inequívoca el **primer contrato adjudicado** a cada empresa (por identificador canónico o NIF), evitando duplicidades por errores tipográficos o filiales corporativas."
+            "type": "miniCard",
+            "title": "2. Tasa de Rotación Anual",
+            "text": "Se define como el porcentaje de proveedores activos en el ejercicio que nunca antes habían recibido una adjudicación municipal: Tasa de Rotación = (Nuevos Entrantes / Total Proveedores Activos) × 100 Asimismo, se analiza la cuota de `gasto` captada por los debutantes frente a las firmas recurrentes.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Tasa de Rotación Anual**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Se define como el porcentaje de proveedores activos en el ejercicio que nunca antes habían recibido una adjudicación municipal: Tasa de Rotación = (Nuevos Entrantes / Total Proveedores Activos) × 100 Asimismo, se analiza la cuota de `gasto` captada por los debutantes frente a las firmas recurrentes."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Señal de 🟠 Baja Renovación de Proveedores**"
-          },
-          {
-            "type": "paragraph",
-            "text": "El sistema emite una **señal analítica de baja renovación de proveedores** conforme a los **umbrales analíticos propios de LicitAlcázar** (no establecidos por ley, sino como criterio estadístico de escrutinio preventivo), cuando en un ejercicio posterior al año base (2018): · • La tasa de rotación desciende por debajo del **50%** (umbral analítico propio de LicitAlcázar). · • Las empresas veteranas absorben más del **75% del presupuesto licitado** (umbral analítico propio de LicitAlcázar). · En Alcázar de San Juan, este patrón se manifiesta a partir de 2023, donde la tasa de rotación se situó en el 47.5% y las veteranas absorbieron el 85.7% de los fondos."
+            "type": "miniCard",
+            "title": "3. Señal de 🟠 Baja Renovación de Proveedores",
+            "text": "El sistema emite una **señal analítica de baja renovación de proveedores** conforme a los **umbrales analíticos propios de LicitAlcázar** (no establecidos por ley, sino como criterio estadístico de escrutinio preventivo), cuando en un ejercicio posterior al año base (2018): · • La tasa de rotación desciende por debajo del **50%** (umbral analítico propio de LicitAlcázar). · • Las empresas veteranas absorben más del **75% del presupuesto licitado** (umbral analítico propio de LicitAlcázar). · En Alcázar de San Juan, este patrón se manifiesta a partir de 2023, donde la tasa de rotación se situó en el 47.5% y las veteranas absorbieron el 85.7% de los fondos.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
             "type": "paragraph",
@@ -1490,28 +1478,25 @@
             "text": "La literatura económica y los informes de fiscalización de los tribunales de cuentas identifican con frecuencia el **ciclo político-presupuestario**: un repunte anormal en el volumen y formalización de contratos públicos en las semanas y meses previos a unas elecciones locales, con especial intensidad en inversiones visibles a pie de calle."
           },
           {
-            "type": "paragraph",
-            "text": "**1. Definición de la Ventana Preelectoral**"
+            "type": "miniCard",
+            "title": "1. Definición de la Ventana Preelectoral",
+            "text": "Se fija una ventana de **90 días naturales** previos a la votación de las elecciones municipales: · • **Municipales 2019**: 26 de febrero a 26 de mayo de 2019. · • **Municipales 2023**: 28 de febrero a 28 de mayo de 2023.",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Se fija una ventana de **90 días naturales** previos a la votación de las elecciones municipales: · • **Municipales 2019**: 26 de febrero a 26 de mayo de 2019. · • **Municipales 2023**: 28 de febrero a 28 de mayo de 2023."
+            "type": "miniCard",
+            "title": "2. Grupo de Control No Electoral",
+            "text": "Para evitar el sesgo estacional de la primavera (cierre del primer trimestre contable), las ventanas electorales se comparan rigurosamente frente a la **media histórica del mismo trimestre (marzo–mayo) en años no electorales** (2020, 2021, 2022, 2024 y 2025).",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Grupo de Control No Electoral**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Para evitar el sesgo estacional de la primavera (cierre del primer trimestre contable), las ventanas electorales se comparan rigurosamente frente a la **media histórica del mismo trimestre (marzo–mayo) en años no electorales** (2020, 2021, 2022, 2024 y 2025)."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Inversiones Urbanas Visibles**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Se cuantifica el peso de los contratos de **obras y servicios a pie de calle** (pavimentaciones, reformas de plazas, parques, alumbrado y eventos) frente a compras ordinarias de suministros o gestión interna, permitiendo al ciudadano auditar las licitaciones aceleradas antes de acudir a las urnas."
+            "type": "miniCard",
+            "title": "3. Inversiones Urbanas Visibles",
+            "text": "Se cuantifica el peso de los contratos de **obras y servicios a pie de calle** (pavimentaciones, reformas de plazas, parques, alumbrado y eventos) frente a compras ordinarias de suministros o gestión interna, permitiendo al ciudadano auditar las licitaciones aceleradas antes de acudir a las urnas.",
+            "columns": 3,
+            "tone": "slate"
           }
         ]
       },
@@ -1534,28 +1519,26 @@
             "text": "La Ley de Contratos del Sector Público (LCSP) establece reglas estrictas para limitar las desviaciones económicas sobrevenidas en las obras e inversiones públicas, erradicando la práctica histórica de licitar a precios artificially bajos para posteriormente inflar el coste final mediante modificados continuados."
           },
           {
-            "type": "paragraph",
-            "text": "**Art. 204 LCSP: Modificaciones Previstas**"
+            "type": "miniCard",
+            "title": "Art. 204 LCSP: Modificaciones Previstas",
+            "text": "Admisibles únicamente si el Pliego de Cláusulas Administrativas Particulares (PCAP) fijó expresamente su posibilidad con cláusulas claras, precisas e inequívocas. Límite cuantitativo inquebrantable: **máximo un 20% del precio primitivo** sin que quepa alterar la naturaleza global del contrato.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Admisibles únicamente si el Pliego de Cláusulas Administrativas Particulares (PCAP) fijó expresamente su posibilidad con cláusulas claras, precisas e inequívocas. Límite cuantitativo inquebrantable: **máximo un 20% del precio primitivo** sin que quepa alterar la naturaleza global del contrato."
+            "type": "miniCard",
+            "title": "Art. 205 LCSP: Modificaciones No Previstas (Régimen de Modificaciones Sustanciales)",
+            "text": "Reservadas a supuestos tasados e imprevisibles (prestaciones adicionales devenidas necesarias o circunstancias sobrevenidas imprevisibles para una administración diligente). Conforme a los arts. 205 y 211.1.g) de la LCSP, las modificaciones no previstas no pueden alterar las condiciones esenciales de la licitación ni superar los límites cuantitativos legales (entre ellos, el umbral sustancial del 20% del precio inicial). Si fuese necesario ejecutar la prestación de forma distinta y dicha alteración supera los límites del art. 205, la modificación resulta jurídicamente improcedente en el contrato en vigor; en tal supuesto, la administración debe optar entre continuar la ejecución en los términos originariamente pactados o, si resulta imprescindible para satisfacer el interés público alterar sustancialmente la prestación, acordar la resolución contractual (art. 211.1.g LCSP) y celebrar un nuevo contrato en concurrencia pública.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**Art. 205 LCSP: Modificaciones No Previstas (Régimen de Modificaciones Sustanciales)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Reservadas a supuestos tasados e imprevisibles (prestaciones adicionales devenidas necesarias o circunstancias sobrevenidas imprevisibles para una administración diligente). Conforme a los arts. 205 y 211.1.g) de la LCSP, las modificaciones no previstas no pueden alterar las condiciones esenciales de la licitación ni superar los límites cuantitativos legales (entre ellos, el umbral sustancial del 20% del precio inicial). Si fuese necesario ejecutar la prestación de forma distinta y dicha alteración supera los límites del art. 205, la modificación resulta jurídicamente improcedente en el contrato en vigor; en tal supuesto, la administración debe optar entre continuar la ejecución en los términos originariamente pactados o, si resulta imprescindible para satisfacer el interés público alterar sustancialmente la prestación, acordar la resolución contractual (art. 211.1.g LCSP) y celebrar un nuevo contrato en concurrencia pública."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Cadenas de Modificados y Relicitaciones en Cascada**"
-          },
-          {
-            "type": "paragraph",
-            "text": "LicitAlcázar identifica modificaciones contractuales a partir de los registros publicados en la base de datos. Las variaciones económicas se calculan sobre el precio inicial del contrato y se muestran como señales cuantitativas. Las relaciones entre expedientes solo se presentan cuando pueden reconstruirse a partir de datos almacenados; no se incorporan expedientes, importes, empresas ni proyectos específicos mediante código."
+            "type": "miniCard",
+            "title": "Cadenas de Modificados y Relicitaciones en Cascada",
+            "text": "LicitAlcázar identifica modificaciones contractuales a partir de los registros publicados en la base de datos. Las variaciones económicas se calculan sobre el precio inicial del contrato y se muestran como señales cuantitativas. Las relaciones entre expedientes solo se presentan cuando pueden reconstruirse a partir de datos almacenados; no se incorporan expedientes, importes, empresas ni proyectos específicos mediante código.",
+            "columns": 2,
+            "tone": "slate",
+            "span": "full"
           }
         ]
       },
@@ -1576,20 +1559,18 @@
             "text": "La duración estipulada en los pliegos administrativos es vinculante para las partes. LicitAlcázar analiza la duración registrada de cada contrato contrastando el plazo previsto inicialmente con la fecha del último evento oficial (formalización, prórroga, adenda o liquidación) publicado en la Plataforma de Contratación del Sector Público. Dado que esta métrica refleja la cronología de publicaciones telemáticas y no una acreditación de la ejecución material en obra, se califica con rigor como «duración registrada vs. prevista», advirtiendo que los desfases extremos pueden obedecer a actualizaciones administrativas tardías del perfil de contratante."
           },
           {
-            "type": "paragraph",
-            "text": "**Art. 29 LCSP: Límite Legal de 5 Años en Servicios y Suministros**"
+            "type": "miniCard",
+            "title": "Art. 29 LCSP: Límite Legal de 5 Años en Servicios y Suministros",
+            "text": "El artículo 29.4 de la LCSP prohíbe taxativamente que los contratos de servicios y suministros de tracto sucesivo superen los **5 años de duración total**, sumando el periodo inicial y todas las prórrogas posibles. Las prórrogas deben acordarse expresamente por el órgano de contratación y comunicarse al contratista con al menos 2 meses de antelación.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "El artículo 29.4 de la LCSP prohíbe taxativamente que los contratos de servicios y suministros de tracto sucesivo superen los **5 años de duración total**, sumando el periodo inicial y todas las prórrogas posibles. Las prórrogas deben acordarse expresamente por el órgano de contratación y comunicarse al contratista con al menos 2 meses de antelación."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Art. 195 LCSP: Plazos de Ejecución en Obras y Penalidades**"
-          },
-          {
-            "type": "paragraph",
-            "text": "En contratos de obras, la demora culpable faculta a la corporación para resolver el contrato o repercutir penalidades económicas diarias de 0,60 € por cada 1.000 € del precio. Cualquier prórroga no culpable exige expediente motivado por causas sobrevenidas o fuerza mayor ajena al contratista."
+            "type": "miniCard",
+            "title": "Art. 195 LCSP: Plazos de Ejecución en Obras y Penalidades",
+            "text": "En contratos de obras, la demora culpable faculta a la corporación para resolver el contrato o repercutir penalidades económicas diarias de 0,60 € por cada 1.000 € del precio. Cualquier prórroga no culpable exige expediente motivado por causas sobrevenidas o fuerza mayor ajena al contratista.",
+            "columns": 2,
+            "tone": "slate"
           }
         ]
       },
@@ -1610,20 +1591,18 @@
             "text": "Analizar la distribución territorial según el domicilio registral de los adjudicatarios permite evaluar la participación de contratistas domiciliados en Alcázar de San Juan y su comarca frente a empresas domiciliadas en otras provincias o comunidades autónomas, sin que el domicilio social deba confundirse con el lugar de ejecución material de las prestaciones ni con el destino económico último de los fondos."
           },
           {
-            "type": "paragraph",
-            "text": "**Clasificación por Prefijo CIF Registral**"
+            "type": "miniCard",
+            "title": "Clasificación por Prefijo CIF Registral",
+            "text": "El Registro Mercantil asigna a cada sociedad un CIF cuyos dígitos 2º y 3º indican la provincia fundacional: **13 (Ciudad Real)**, **02, 16, 19 y 45 (Castilla-La Mancha)**, y el resto para las demás comunidades autónomas (28 Madrid, 08 Barcelona, 46 Valencia). Se identifican con precisión las sociedades domiciliadas en Alcázar de San Juan (CP 13600).",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "El Registro Mercantil asigna a cada sociedad un CIF cuyos dígitos 2º y 3º indican la provincia fundacional: **13 (Ciudad Real)**, **02, 16, 19 y 45 (Castilla-La Mancha)**, y el resto para las demás comunidades autónomas (28 Madrid, 08 Barcelona, 46 Valencia). Se identifican con precisión las sociedades domiciliadas en Alcázar de San Juan (CP 13600)."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Autónomos y Comercios Locales**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Los contratos menores y suministros adjudicados a personas físicas (NIF de 8 cifras y letra) se adscriben al ámbito local de Alcázar de San Juan, reflejando las compras de proximidad a fontaneros, cerrajeros, electricistas, academias e imprentas de la ciudad."
+            "type": "miniCard",
+            "title": "Autónomos y Comercios Locales",
+            "text": "Los contratos menores y suministros adjudicados a personas físicas (NIF de 8 cifras y letra) se adscriben al ámbito local de Alcázar de San Juan, reflejando las compras de proximidad a fontaneros, cerrajeros, electricistas, academias e imprentas de la ciudad.",
+            "columns": 2,
+            "tone": "slate"
           }
         ]
       },
@@ -1648,31 +1627,32 @@
           },
           {
             "type": "heading",
-            "text": "¿Qué puedes verificar en el expediente original de PLACSP?"
+            "text": "¿Qué puedes verificar en el expediente original de PLACSP?",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
-            "type": "paragraph",
-            "text": "**1. Pliegos y Anexos**"
+            "type": "miniCard",
+            "title": "1. Pliegos y Anexos",
+            "text": "Descargar los Pliegos de Cláusulas Administrativas (PCAP) y de Prescripciones Técnicas (PPT) firmados electrónicamente.",
+            "columns": 3,
+            "tone": "blue"
           },
           {
-            "type": "paragraph",
-            "text": "Descargar los Pliegos de Cláusulas Administrativas (PCAP) y de Prescripciones Técnicas (PPT) firmados electrónicamente."
+            "type": "miniCard",
+            "title": "2. Actas de la Mesa",
+            "text": "Comprobar las ofertas presentadas, exclusiones técnicas, valoraciones de las proposiciones e informes de justificación de ofertas con baja elevada (art. 149 LCSP).",
+            "columns": 3,
+            "tone": "blue"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Actas de la Mesa**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Comprobar las ofertas presentadas, exclusiones técnicas, valoraciones de las proposiciones e informes de justificación de ofertas con baja elevada (art. 149 LCSP)."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Decretos y Adjudicación**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Consultar la resolución formal de adjudicación, formalización de contrato e informes de necesidad del órgano competente."
+            "type": "miniCard",
+            "title": "3. Decretos y Adjudicación",
+            "text": "Consultar la resolución formal de adjudicación, formalización de contrato e informes de necesidad del órgano competente.",
+            "columns": 3,
+            "tone": "blue"
           },
           {
             "type": "paragraph",
@@ -1702,36 +1682,32 @@
             "text": "El módulo de **Contratos en Curso** (/seguimiento) y el **Portal de Datos Abiertos** (/datos) proporcionan herramientas de supervisión prospectiva y soberanía de datos tanto a la ciudadanía como a empresas locales, medios de comunicación y entidades de control cívico."
           },
           {
-            "type": "paragraph",
-            "text": "**1. Convocatorias Abiertas y Cómputo de Días Hábiles**"
+            "type": "miniCard",
+            "title": "1. Convocatorias Abiertas y Cómputo de Días Hábiles",
+            "text": "Se detectan los anuncios en estado *Publicada* y *En evaluación* en PLACSP. Para cada convocatoria en plazo, se calcula tanto el número de días naturales restantes como los **días hábiles reales** (excluyendo sábados y domingos) hasta la fecha y hora límite de presentación de plicas.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Se detectan los anuncios en estado *Publicada* y *En evaluación* en PLACSP. Para cada convocatoria en plazo, se calcula tanto el número de días naturales restantes como los **días hábiles reales** (excluyendo sábados y domingos) hasta la fecha y hora límite de presentación de plicas."
+            "type": "miniCard",
+            "title": "2. Régimen de Prórrogas y Prevención de Caducidad (Art. 29 LCSP)",
+            "text": "Se monitoriza la fecha de fin estimada de todos los contratos vigentes. Los contratos de servicios y suministros recurrentes se identifican como legalmente prorrogables (con un tope legal ordinario de 5 años), mientras que obras y contratos menores se marcan como de ejecución única no prorrogable (art. 29.8 LCSP).",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Régimen de Prórrogas y Prevención de Caducidad (Art. 29 LCSP)**"
+            "type": "miniCard",
+            "title": "3. Estándar de Exportación CSV con BOM UTF-8 (RFC 4180)",
+            "text": "Todas las descargas en CSV incorporan el Byte Order Mark UTF-8 (`\\uFEFF`) y escapado RFC 4180, garantizando apertura limpia de tildes, eñes y el símbolo del euro (€) en Microsoft Excel, LibreOffice Calc y Google Sheets sin necesidad de asistentes de importación de texto.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Se monitoriza la fecha de fin estimada de todos los contratos vigentes. Los contratos de servicios y suministros recurrentes se identifican como legalmente prorrogables (con un tope legal ordinario de 5 años), mientras que obras y contratos menores se marcan como de ejecución única no prorrogable (art. 29.8 LCSP)."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Estándar de Exportación CSV con BOM UTF-8 (RFC 4180)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Todas las descargas en CSV incorporan el Byte Order Mark UTF-8 (`\\uFEFF`) y escapado RFC 4180, garantizando apertura limpia de tildes, eñes y el símbolo del euro (€) en Microsoft Excel, LibreOffice Calc y Google Sheets sin necesidad de asistentes de importación de texto."
-          },
-          {
-            "type": "paragraph",
-            "text": "**4. API Abierta de Exportación y Reutilización Cívica**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Cualquier persona puede descargar o programar la ingesta periódica de los catálogos en JSON o CSV llamando a los endpoints públicos `/api/export/licitaciones`, `/api/export/empresas` y `/api/export/alertas` conforme a la Ley 37/2007 de reutilización de datos del sector público."
+            "type": "miniCard",
+            "title": "4. API Abierta de Exportación y Reutilización Cívica",
+            "text": "Cualquier persona puede descargar o programar la ingesta periódica de los catálogos en JSON o CSV llamando a los endpoints públicos `/api/export/licitaciones`, `/api/export/empresas` y `/api/export/alertas` conforme a la Ley 37/2007 de reutilización de datos del sector público.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
             "type": "paragraph",
@@ -1780,31 +1756,33 @@
           },
           {
             "type": "heading",
-            "text": "20.1. Jerarquía de Normas Aplicables"
+            "text": "20.1. Jerarquía de Normas Aplicables",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
-            "type": "paragraph",
-            "text": "**1. **Ley 9/2017 de Contratos del Sector Público (LCSP)****"
+            "type": "miniCard",
+            "title": "1. **Ley 9/2017 de Contratos del Sector Público (LCSP)**",
+            "text": "**Norma central y sustantiva principal.** Fundamento regulador de todos los indicadores de contratación municipal: necesidad e idoneidad (art. 28), límites del contrato menor (art. 118), prohibición de fraccionamiento indebido (art. 99.2), ofertas anormalmente bajas (art. 149), criterios de adjudicación (art. 145), prórrogas (art. 29) y modificados (arts. 204 y 205).",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**Norma central y sustantiva principal.** Fundamento regulador de todos los indicadores de contratación municipal: necesidad e idoneidad (art. 28), límites del contrato menor (art. 118), prohibición de fraccionamiento indebido (art. 99.2), ofertas anormalmente bajas (art. 149), criterios de adjudicación (art. 145), prórrogas (art. 29) y modificados (arts. 204 y 205)."
+            "type": "miniCard",
+            "title": "2. Ley 39/2015 del Procedimiento Administrativo Común (LPACAP)",
+            "text": "**Marco procedimental y de garantías.** Referencia para plazos administrativos, eficacia de resoluciones y formalización de actos. LicitAlcázar no ejerce potestades de revisión de oficio ni anulatorias, correspondiendo estas exclusivamente a la propia administración y a los órganos judiciales.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Ley 39/2015 del Procedimiento Administrativo Común (LPACAP)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "**Marco procedimental y de garantías.** Referencia para plazos administrativos, eficacia de resoluciones y formalización de actos. LicitAlcázar no ejerce potestades de revisión de oficio ni anulatorias, correspondiendo estas exclusivamente a la propia administración y a los órganos judiciales."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 (LOPDGDD)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "**Protección de datos y minimización proactiva.** El tratamiento de datos en LicitAlcázar se fundamenta en el interés legítimo en la transparencia y el escrutinio cívico de la contratación municipal (art. 6.1.f RGPD), ponderado estrictamente con los derechos de las personas físicas adjudicatarias. Conforme al principio de minimización (art. 5.1.c RGPD), se aplican las siguientes medidas técnicas:"
+            "type": "subcard",
+            "title": "Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 (LOPDGDD)",
+            "text": "**Protección de datos y minimización proactiva.** El tratamiento de datos en LicitAlcázar se fundamenta en el interés legítimo en la transparencia y el escrutinio cívico de la contratación municipal (art. 6.1.f RGPD), ponderado estrictamente con los derechos de las personas físicas adjudicatarias. Conforme al principio de minimización (art. 5.1.c RGPD), se aplican las siguientes medidas técnicas:",
+            "columns": 2,
+            "span": "full",
+            "tone": "blue"
           },
           {
             "type": "listItem",
@@ -1819,52 +1797,55 @@
             "text": "**Enmascaramiento visual:** En tablas y fichas públicas se enmascaran los dígitos intermedios conservando cuatro caracteres, adoptando por analogía técnica el criterio de la Disposición adicional séptima de la LOPDGDD, sin que constituya habilitación legal directa para este tratamiento."
           },
           {
-            "type": "paragraph",
-            "text": "**4. Ley 37/2007 de Reutilización de la Información del Sector Público**"
-          },
-          {
-            "type": "paragraph",
-            "text": "**Reutilización de datos abiertos.** Regula el acceso y reutilización de información pública, sin constituir una autorización automática para el tratamiento de datos personales ni sustituir las exigencias del RGPD."
-          },
-          {
-            "type": "heading",
-            "text": "20.2. Instrucciones Técnicas, Control Interno y Normas Sectoriales"
-          },
-          {
-            "type": "paragraph",
-            "text": "**Resolución de 3 de julio de 2018 (Tribunal de Cuentas)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Instrucción técnica sobre la remisión telemática al Tribunal de Cuentas de extractos de expedientes y relaciones anuales de contratos locales. **No concede habilitación alguna a observatorios cívicos o plataformas privadas** ni autoriza declaraciones de ilegalidad."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Resolución de 25 de julio de 2018 (IGAE)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Regula exclusivamente la función interventora en régimen de requisitos básicos para la **Administración General del Estado (ámbito estatal)**. No es una norma municipal ni rige directamente el control interno local."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Real Decreto 424/2017 (Control Interno Local)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Constituye la referencia institucional del control interno de las entidades locales (función interventora y control financiero municipal), sin atribuir competencias ni funciones de fiscalización a LicitAlcázar."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Real Decreto 817/2009 y Ley 24/2011**"
-          },
-          {
-            "type": "paragraph",
-            "text": "El RD 817/2009 contiene disposiciones de desarrollo reglamentario con advertencia temporal y previa comprobación de vigencia tras la LCSP. La Ley 24/2011 rige exclusivamente contratos de defensa y seguridad del Estado."
+            "type": "miniCard",
+            "title": "4. Ley 37/2007 de Reutilización de la Información del Sector Público",
+            "text": "**Reutilización de datos abiertos.** Regula el acceso y reutilización de información pública, sin constituir una autorización automática para el tratamiento de datos personales ni sustituir las exigencias del RGPD.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
             "type": "heading",
-            "text": "20.3. Advertencias sobre Normas No Vigentes o Inaplicables"
+            "text": "20.2. Instrucciones Técnicas, Control Interno y Normas Sectoriales",
+            "card": {
+              "tone": "blue",
+              "layout": "featured"
+            }
+          },
+          {
+            "type": "miniCard",
+            "title": "Resolución de 3 de julio de 2018 (Tribunal de Cuentas)",
+            "text": "Instrucción técnica sobre la remisión telemática al Tribunal de Cuentas de extractos de expedientes y relaciones anuales de contratos locales. **No concede habilitación alguna a observatorios cívicos o plataformas privadas** ni autoriza declaraciones de ilegalidad.",
+            "columns": 2,
+            "tone": "blue"
+          },
+          {
+            "type": "miniCard",
+            "title": "Resolución de 25 de julio de 2018 (IGAE)",
+            "text": "Regula exclusivamente la función interventora en régimen de requisitos básicos para la **Administración General del Estado (ámbito estatal)**. No es una norma municipal ni rige directamente el control interno local.",
+            "columns": 2,
+            "tone": "blue"
+          },
+          {
+            "type": "miniCard",
+            "title": "Real Decreto 424/2017 (Control Interno Local)",
+            "text": "Constituye la referencia institucional del control interno de las entidades locales (función interventora y control financiero municipal), sin atribuir competencias ni funciones de fiscalización a LicitAlcázar.",
+            "columns": 2,
+            "tone": "blue"
+          },
+          {
+            "type": "miniCard",
+            "title": "Real Decreto 817/2009 y Ley 24/2011",
+            "text": "El RD 817/2009 contiene disposiciones de desarrollo reglamentario con advertencia temporal y previa comprobación de vigencia tras la LCSP. La Ley 24/2011 rige exclusivamente contratos de defensa y seguridad del Estado.",
+            "columns": 2,
+            "tone": "blue"
+          },
+          {
+            "type": "heading",
+            "text": "20.3. Advertencias sobre Normas No Vigentes o Inaplicables",
+            "card": {
+              "tone": "red",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
@@ -1887,36 +1868,28 @@
             "text": "**Resolución de 28 de abril de 2014:** Refleja una fiscalización parlamentaria histórica de contratos estatales del ejercicio 2008 tramitados bajo legislación **derogada** (TRLCSP/LCP). No constituye regla jurídica automática para contratos locales actuales."
           },
           {
-            "type": "paragraph",
-            "text": "**20.4. Régimen del Contrato Menor y Real Decreto-ley 3/2020**"
+            "type": "subcard",
+            "title": "20.4. Régimen del Contrato Menor y Real Decreto-ley 3/2020",
+            "text": "La Disposición final primera del Real Decreto-ley 3/2020, de 4 de febrero, reformó el art. 118 de la LCSP suprimiendo la limitación acumulada por contratista que establecía la redacción originaria de la Ley 9/2017 (antiguo art. 118.3, que exigía justificar que el contratista no había suscrito contratos menores que individual o conjuntamente superasen los umbrales). • Bajo el régimen consolidado vigente, la LCSP no establece ningún límite acumulado legal por proveedor. La ley define umbrales de valor estimado de aplicación individual a cada contrato menor (art. 118.1 LCSP: **40.000 €** en obras y **15.000 €** en suministros y servicios) y prohíbe el fraccionamiento del objeto contractual con la finalidad de eludir los requisitos de publicidad o los relativos al procedimiento de adjudicación (arts. 99.2 y 118.2 LCSP). • En consecuencia, la suma agregada de importes por proveedor y periodo que calcula LicitAlcázar no es una regla ni una infracción tipificada en la ley, sino una **convención analítica propia del portal** —de modo análogo a la convención metodológica aplicada en la Sección 13 para estimar el volumen empresarial—, concebida exclusivamente para priorizar expedientes en el escrutinio cívico y la revisión documental ciudadana.",
+            "columns": 2,
+            "span": "full",
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "La Disposición final primera del Real Decreto-ley 3/2020, de 4 de febrero, reformó el art. 118 de la LCSP suprimiendo la limitación acumulada por contratista que establecía la redacción originaria de la Ley 9/2017 (antiguo art. 118.3, que exigía justificar que el contratista no había suscrito contratos menores que individual o conjuntamente superasen los umbrales)."
+            "type": "miniCard",
+            "title": "20.5. Sentencia del Tribunal Supremo núm. 1119/2025 (Caso BOSCO)",
+            "text": "STS núm. 1119/2025, de 11 de septiembre de 2025, ECLI:ES:TS:2025:3826. Resuelve una controversia sobre el acceso a la información relativa a la aplicación administrativa BOSCO y a su código fuente.",
+            "columns": 2,
+            "tone": "slate",
+            "span": "full"
           },
           {
-            "type": "paragraph",
-            "text": "Bajo el régimen consolidado vigente, la LCSP no establece ningún límite acumulado legal por proveedor. La ley define umbrales de valor estimado de aplicación individual a cada contrato menor (art. 118.1 LCSP: **40.000 €** en obras y **15.000 €** en suministros y servicios) y prohíbe el fraccionamiento del objeto contractual con la finalidad de eludir los requisitos de publicidad o los relativos al procedimiento de adjudicación (arts. 99.2 y 118.2 LCSP)."
-          },
-          {
-            "type": "paragraph",
-            "text": "En consecuencia, la suma agregada de importes por proveedor y periodo que calcula LicitAlcázar no es una regla ni una infracción tipificada en la ley, sino una **convención analítica propia del portal** —de modo análogo a la convención metodológica aplicada en la Sección 13 para estimar el volumen empresarial—, concebida exclusivamente para priorizar expedientes en el escrutinio cívico y la revisión documental ciudadana."
-          },
-          {
-            "type": "paragraph",
-            "text": "**20.5. Sentencia del Tribunal Supremo núm. 1119/2025 (Caso BOSCO)**"
-          },
-          {
-            "type": "paragraph",
-            "text": "STS núm. 1119/2025, de 11 de septiembre de 2025, ECLI:ES:TS:2025:3826. Resuelve una controversia sobre el acceso a la información relativa a la aplicación administrativa BOSCO y a su código fuente."
-          },
-          {
-            "type": "paragraph",
-            "text": "**20.6. Criterios Técnicos de Accesibilidad**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Las referencias de la LCSP a accesibilidad se circunscriben al ámbito de los medios y procedimientos de contratación pública. La plataforma adopta voluntariamente WCAG y EN 301 549 como referencias técnicas. Su aplicación directa depende de que el titular o el sitio se encuentre dentro de su ámbito subjetivo."
+            "type": "miniCard",
+            "title": "20.6. Criterios Técnicos de Accesibilidad",
+            "text": "Las referencias de la LCSP a accesibilidad se circunscriben al ámbito de los medios y procedimientos de contratación pública. La plataforma adopta voluntariamente WCAG y EN 301 549 como referencias técnicas. Su aplicación directa depende de que el titular o el sitio se encuentre dentro de su ámbito subjetivo.",
+            "columns": 2,
+            "tone": "slate",
+            "span": "full"
           },
           {
             "type": "paragraph",
