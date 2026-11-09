@@ -99,6 +99,24 @@ assert.equal((redFlagSection?.blocks ?? []).filter((block) => block.type === 'su
   'the PBL/VEC and competition explanations must retain their nested cards');
 assert.equal((redFlagSection?.blocks ?? []).filter((block) => block.type === 'miniCard').length, 3,
   'the three corporate-aggregation explanations must retain their compact cards');
+const riskGuideSection = sections.find((section) => section.id === 'factores-auditoria');
+const riskGuideBlocks = riskGuideSection?.blocks ?? [];
+const riskGuideHeadings = riskGuideBlocks.filter((block) => block.type === 'heading' && block.card);
+assert.equal(riskGuideHeadings.length, 8, 'the citizen risk guide must retain all eight structured subsections');
+assert.equal(riskGuideBlocks.filter((block) => block.type === 'miniCard' && block.columns === 5).length, 5,
+  'the five analytical dimensions must remain in a five-column card group');
+assert.equal(riskGuideBlocks.filter((block) => block.type === 'miniCard' && block.columns === 4).length, 4,
+  'the four contract lifecycle phases must remain in a four-column card group');
+assert.deepEqual(
+  riskGuideBlocks.filter((block) => block.type === 'subcard' && block.columns === 3).map((block) => block.tone),
+  ['blue', 'amber', 'red'],
+  'the severity scale must preserve its blue, amber and red levels');
+assert.deepEqual(
+  riskGuideHeadings.filter((block) => block.card.eyebrow).map((block) => block.card.eyebrow),
+  ['Tipología 1', 'Tipología 2', 'Tipología 3'],
+  'the three alert typologies must retain their labels');
+assert.equal(riskGuideBlocks.filter((block) => block.type === 'formula').length, 1,
+  'the risk score formula must remain a distinct formula block');
 const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
 assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
 for (const table of methodologyTables) {
