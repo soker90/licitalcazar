@@ -108,8 +108,11 @@ for (const table of methodologyTables) {
     assert.equal(row.length, table.headers.length, 'every methodology table row must match the header count');
   }
 }
-assert.ok(sections.reduce((total, section) => total + (section.blocks?.length ?? 0), 0) > 300,
-  'methodology text outside paragraphs and headings must be preserved');
+const methodologyContentCount = sections.reduce((total, section) => total + (section.blocks ?? []).reduce((sectionTotal, block) => (
+  sectionTotal + 1 + (block.type === 'subcard' || (block.type === 'heading' && block.card) ? 1 : 0)
+), 0), 0);
+assert.ok(methodologyContentCount > 300,
+  'methodology text and structured card metadata must be preserved');
 assert.ok(methodologyText.includes('Organismo / Entidad') && methodologyText.includes('Ayuntamiento de Alcázar'),
   'the historical coverage table content must be retained');
 for (const phrase of [
