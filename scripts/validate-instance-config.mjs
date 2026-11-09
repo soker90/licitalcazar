@@ -165,6 +165,18 @@ const legalCards = (legalSourcesSection?.blocks ?? []).filter((block) => block.t
 assert.equal(legalCards.length, 7, 'the legal source groups must retain their seven structured source cards');
 assert.equal((legalSourcesSection?.blocks ?? []).filter((block) => block.type === 'heading' && block.card).length, 6,
   'the six legal-source groups must retain their separate visual hierarchy');
+const internalMethodologyLinks = [
+  ['verificabilidad', '/licitaciones', '/analisis'],
+  ['vigilancia-datos', '/seguimiento', '/datos'],
+  ['fuentes-juridicas', '/aviso-legal', '/privacidad', '/rectificacion'],
+];
+for (const [id, ...routes] of internalMethodologyLinks) {
+  const section = sections.find((item) => item.id === id);
+  const text = (section?.blocks ?? []).map((block) => block.text ?? '').join(' ');
+  for (const route of routes) {
+    assert.ok(text.includes(`](${route})`), `${id} must preserve its internal navigation link to ${route}`);
+  }
+}
 const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
 assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
 for (const table of methodologyTables) {
