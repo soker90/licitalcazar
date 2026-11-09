@@ -5,7 +5,7 @@
   "geographicLabel": "Alcázar de San Juan, Ciudad Real",
   "logoPath": "/logo.svg",
   "logoAlt": "A",
-  "brandMark": "LA",
+  "brandMark": "A",
   "instanceCreationGuide": false,
   "theme": {
     "accent": "#00d4a4",
@@ -65,12 +65,12 @@
     {
       "label": "Aguas de Alcázar",
       "query": "Aguas de Alcázar",
-      "icon": "building"
+      "icon": "droplet"
     },
     {
       "label": "Patronato de Cultura",
       "query": "Cultura",
-      "icon": "file"
+      "icon": "file-check"
     },
     {
       "label": "Comsermancha",
@@ -80,7 +80,7 @@
     {
       "label": "Obras y Proyectos",
       "query": "Obras",
-      "icon": "building"
+      "icon": "hard-hat"
     }
   ],
   "footerDescription": "Portal cívico independiente para la monitorización, análisis y transparencia de la contratación pública en el municipio de Alcázar de San Juan (Ciudad Real). Datos abiertos procedentes directamente de la Plataforma de Contratación del Sector Público (PLACSP).",
@@ -159,7 +159,7 @@
     "all": {
       "contractsSubtitle": "Total de licitaciones en Alcázar (2018–2026)",
       "contractsBadge": "Total Alcázar · 2018–2026",
-      "spendSubtitle": "Contratación municipal y mancomunada",
+      "spendSubtitle": "Ayto: {direct} M€ · Comser.: {associated} M€",
       "organismsSubtitle": "Entidades directas e indirectas",
       "organismsBadge": "Entidades públicas"
     }
@@ -1959,6 +1959,10 @@
         "title": "7. Indicadores de Auditoría"
       },
       {
+        "id": "baja-temeraria",
+        "title": "Indicador 5 · Baja acusada respecto al PBL"
+      },
+      {
         "id": "factores-auditoria",
         "title": "8. Guía Ciudadana de Factores de Auditoría (V2)"
       },
@@ -2013,7 +2017,7 @@
     ]
   },
   "homeLatestPublicationLabel": "Última licitación oficial",
-  "headerBrandSuffix": "",
+  "headerBrandSuffix": "v2",
   "footerDisclaimer": "LicitAlcázar es una iniciativa cívica e independiente de análisis de datos públicos de contratación. Los resultados tienen carácter exclusivamente informativo y metodológico. No constituyen informe de fiscalización, auditoría pública, dictamen jurídico vinculante, resolución administrativa ni declaración de ilegalidad, nulidad, responsabilidad o infracción.",
   "footerCopyright": "LicitAlcázar · Iniciativa Cívica de Datos Abiertos",
   "organismsPresentation": {
@@ -2054,14 +2058,16 @@
       }
     ],
     "associatedIncomeLabel": "venta reciclaje",
-    "profileLinkLabel": "Ver perfil"
+    "profileLinkLabel": "Ver perfil",
+    "csvFilenamePrefix": "organismos_alcazar"
   },
   "homeRiskDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar de San Juan.",
   "analysisPresentation": {
     "scopeLabels": {
       "primary": "Directa Municipal"
     },
-    "methodologyLinkLabel": "Criterio Comsermancha y Metodología"
+    "methodologyLinkLabel": "Criterio Comsermancha y Metodología",
+    "methodologyLinkHref": "/metodologia#comsermancha"
   },
   "homeAuditDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar.",
   "dataPresentation": {
