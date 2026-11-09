@@ -844,40 +844,57 @@
         "showInIndex": true,
         "blocks": [
           {
-            "type": "paragraph",
-            "text": "**Principio de Neutralidad y Verificabilidad:** Las señales analíticas de LicitAlcázar no constituyen denuncias, conclusiones jurídicas ni presunciones de delito. Son **alertas analíticas cuantitativas** precalculadas a partir de los datos oficiales publicados en la Plataforma de Contratación del Sector Público (PLACSP)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Su única finalidad es facilitar el análisis cívico democrático y periodístico, señalando expedientes donde concurren patrones que la Ley 9/2017 (LCSP) recomienda vigilar con especial atención."
+            "type": "subcard",
+            "title": "Principio de Neutralidad y Verificabilidad",
+            "text": "Las señales analíticas de LicitAlcázar no constituyen denuncias, conclusiones jurídicas ni presunciones de delito. Son **alertas analíticas cuantitativas** precalculadas a partir de los datos oficiales publicados en la Plataforma de Contratación del Sector Público (PLACSP).\n\nSu única finalidad es facilitar el análisis cívico democrático y periodístico, señalando expedientes donde concurren patrones que la Ley 9/2017 (LCSP) recomienda vigilar con especial atención.",
+            "tone": "amber"
           },
           {
             "type": "heading",
-            "text": "El Paradigma de las 5 Dimensiones para el Escrutinio Cívico"
+            "text": "El Paradigma de las 5 Dimensiones para el Escrutinio Cívico",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "Para garantizar el máximo rigor, evitar acusaciones precipitadas y dotar al ciudadano de herramientas efectivas de contraste, cada señal auditada articula 5 dimensiones analíticas:"
           },
           {
-            "type": "paragraph",
-            "text": "1. Señal Factual Datos descriptivos verificables del expediente o grupo de contratos."
+            "type": "miniCard",
+            "title": "1. Señal Factual",
+            "text": "Datos descriptivos verificables del expediente o grupo de contratos.",
+            "columns": 5,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "2. Causa Normativa Por qué aparece la señal en base a los criterios de la LCSP (Arts. 118, 149 o concurrencia)."
+            "type": "miniCard",
+            "title": "2. Causa Normativa",
+            "text": "Por qué aparece la señal en base a los criterios de la LCSP (Arts. 118, 149 o concurrencia).",
+            "columns": 5,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "3. Factores Ponderados Pesos y contribuciones cuantitativas que elevan la puntuación de riesgo."
+            "type": "miniCard",
+            "title": "3. Factores Ponderados",
+            "text": "Pesos y contribuciones cuantitativas que elevan la puntuación de riesgo.",
+            "columns": 5,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "4. Explicaciones Alternativas Hipótesis legítimas de gestión ordinaria (renovación periódica, eventos singulares, etc.)."
+            "type": "miniCard",
+            "title": "4. Explicaciones Alternativas",
+            "text": "Hipótesis legítimas de gestión ordinaria (renovación periódica, eventos singulares, etc.).",
+            "columns": 5,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "5. Cotejo Documental Documentos oficiales concretos que un investigador debe revisar en PLACSP."
+            "type": "miniCard",
+            "title": "5. Cotejo Documental",
+            "text": "Documentos oficiales concretos que un investigador debe revisar en PLACSP.",
+            "columns": 5,
+            "tone": "slate"
           },
           {
             "type": "paragraph",
@@ -885,47 +902,53 @@
           },
           {
             "type": "heading",
-            "text": "Gradación de Severidad Analítica (Escala 1–3 / 3–5 / >5)"
+            "text": "Gradación de Severidad Analítica (Escala 1–3 / 3–5 / >5)",
+            "card": {
+              "badge": "Escala 1–10",
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "La severidad de cada señal se califica mediante una puntuación cuantitativa en escala de 1 a 10 dividida en tres intervalos de actuación. Es fundamental delimitar con rigor tres planos epistemológicos: **1) Certeza del dato estructurado** (fidelidad objetiva a los datos oficiales extraídos de PLACSP); **2) Intensidad de la señal** (puntuación cuantitativa basada en factores empíricos ponderados); y **3) Certeza jurídica de la interpretación** (inexistente per se a nivel algorítmico: una señal no constituye prueba jurídica de infracción ni prejuzga responsabilidades, cuya determinación corresponde exclusivamente a los órganos de control y tribunales tras el correspondiente procedimiento contradictorio)."
           },
           {
-            "type": "paragraph",
-            "text": "Escala 1–3 · Informativa Leve"
+            "type": "subcard",
+            "title": "Escala 1–3 · Informativa",
+            "text": "Concentraciones moderadas de `gasto`, importes reducidos o avisos preventivos contextuales sin impacto presupuestario severo.",
+            "columns": 3,
+            "tone": "blue",
+            "badge": "Leve"
           },
           {
-            "type": "paragraph",
-            "text": "Concentraciones moderadas de `gasto`, importes reducidos o avisos preventivos contextuales sin impacto presupuestario severo."
+            "type": "subcard",
+            "title": "Escala 3–5 · Severidad Media",
+            "text": "Concursos con **Oferta Única**, renovaciones anuales ordinarias (ej. seguros o análisis sanitarios de agua), proyectos concurrentes con destinatarios diferenciados (ej. actividades infantiles vs juveniles) o bajas de precio moderadas.",
+            "columns": 3,
+            "tone": "amber",
+            "badge": "Moderada"
           },
           {
-            "type": "paragraph",
-            "text": "Escala 3–5 · Severidad Media Moderada"
-          },
-          {
-            "type": "paragraph",
-            "text": "Concursos con **Oferta Única**, renovaciones anuales ordinarias (ej. seguros o análisis sanitarios de agua), proyectos concurrentes con destinatarios diferenciados (ej. actividades infantiles vs juveniles) o bajas de precio moderadas."
-          },
-          {
-            "type": "paragraph",
-            "text": "Escala >5 · Severidad Alta Prioritaria"
-          },
-          {
-            "type": "paragraph",
-            "text": "Indicios prioritarios de revisión documental: acumulación temporal muy estrecha (< 120 días) con identidad de objeto sin que la justificación conste en los datos publicados en PLACSP y exceso sustancial sobre el umbral analítico de referencia (cifra tomada del art. 118.1 LCSP), o descuentos muy acusados sobre el PBL (> 40%). Esta gradación indica prioridad de examen técnico, no probabilidad de infracción."
+            "type": "subcard",
+            "title": "Escala >5 · Severidad Alta",
+            "text": "Indicios prioritarios de revisión documental: acumulación temporal muy estrecha (< 120 días) con identidad de objeto sin que la justificación conste en los datos publicados en PLACSP y exceso sustancial sobre el umbral analítico de referencia (cifra tomada del art. 118.1 LCSP), o descuentos muy acusados sobre el PBL (> 40%). Esta gradación indica prioridad de examen técnico, no probabilidad de infracción.",
+            "columns": 3,
+            "tone": "red",
+            "badge": "Prioritaria"
           },
           {
             "type": "paragraph",
             "text": "Cada alerta desplegada en el Centro de Análisis detalla los factores ponderados que explican de forma transparente por qué se ha activado la señal. A continuación se describe el significado ciudadano de cada criterio:"
           },
           {
-            "type": "paragraph",
-            "text": "Tipología 1"
-          },
-          {
             "type": "heading",
-            "text": "Acumulación de Contratos Menores (Riesgo de Fraccionamiento · Arts. 118 y 99.2 LCSP)"
+            "text": "Acumulación de Contratos Menores (Riesgo de Fraccionamiento · Arts. 118 y 99.2 LCSP)",
+            "card": {
+              "eyebrow": "Tipología 1",
+              "tone": "purple",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
@@ -936,64 +959,94 @@
             "text": "Tras la reforma operada por la Disposición final primera del Real Decreto-ley 3/2020, la LCSP no impone un límite legal acumulado por proveedor. En consecuencia, la agregación de importes por proveedor y periodo que calcula LicitAlcázar no es una infracción tipificada en la ley, sino un **umbral analítico propio del portal** concebido para priorizar la revisión documental de posibles unidades funcionales no integradas."
           },
           {
-            "type": "paragraph",
-            "text": "Mismo proveedor contratado repetidamente Se detecta que el mismo CIF o grupo empresarial recibe múltiples contratos directos del mismo departamento o entidad municipal."
+            "type": "miniCard",
+            "title": "Mismo proveedor contratado repetidamente",
+            "text": "Se detecta que el mismo CIF o grupo empresarial recibe múltiples contratos directos del mismo departamento o entidad municipal.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Trabajos muy similares entre sí (coincidencia %) El texto del objeto de los contratos describe tareas casi idénticas o continuadas, lo que indica que responden a una misma unidad funcional."
+            "type": "miniCard",
+            "title": "Trabajos muy similares entre sí (coincidencia %)",
+            "text": "El texto del objeto de los contratos describe tareas casi idénticas o continuadas, lo que indica que responden a una misma unidad funcional.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Supera el umbral analítico de referencia (+X%) La suma de contratos relacionados supera el umbral analítico de referencia (cifra tomada del art. 118.1 LCSP) y requiere comprobar si las prestaciones forman una unidad funcional y si el objeto pudo haberse alterado o fraccionado."
+            "type": "miniCard",
+            "title": "Supera el umbral analítico de referencia (+X%)",
+            "text": "La suma de contratos relacionados supera el umbral analítico de referencia (cifra tomada del art. 118.1 LCSP) y requiere comprobar si las prestaciones forman una unidad funcional y si el objeto pudo haberse alterado o fraccionado.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Firmados en un periodo muy concentrado Las adjudicaciones se suceden en una ventana de pocos meses o semanas en lugar de planificar una contratación anual abierta."
-          },
-          {
-            "type": "paragraph",
-            "text": "Tipología 2"
+            "type": "miniCard",
+            "title": "Firmados en un periodo muy concentrado",
+            "text": "Las adjudicaciones se suceden en una ventana de pocos meses o semanas en lugar de planificar una contratación anual abierta.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
             "type": "heading",
-            "text": "Licitador Único en Procedimientos Competitivos (Sin Concurrencia de Ofertas)"
+            "text": "Licitador Único en Procedimientos Competitivos (Sin Concurrencia de Ofertas)",
+            "card": {
+              "eyebrow": "Tipología 2",
+              "tone": "blue",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "La contratación pública busca que las empresas compitan en precio y calidad. Cuando un concurso competitivo formal se resuelve con un solo participante, no concurre comparación económica ni técnica entre varias propuestas en el expediente."
           },
           {
-            "type": "paragraph",
-            "text": "Procedimiento competitivo sin alternativa de oferta El procedimiento era formalmente abierto y competitivo, pero no concurrieron otras propuestas admisibles a disputar el contrato."
+            "type": "miniCard",
+            "title": "Procedimiento competitivo sin alternativa de oferta",
+            "text": "El procedimiento era formalmente abierto y competitivo, pero no concurrieron otras propuestas admisibles a disputar el contrato.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Solo se presentó 1 oferta Dato oficial registrado en PLACSP (`num_ofertas` = 1). El procedimiento concluyó con una única oferta admisible registrada, por lo que no existió comparación competitiva entre varias ofertas en ese expediente."
+            "type": "miniCard",
+            "title": "Solo se presentó 1 oferta",
+            "text": "Dato oficial registrado en PLACSP (`num_ofertas` = 1). El procedimiento concluyó con una única oferta admisible registrada, por lo que no existió comparación competitiva entre varias ofertas en ese expediente.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Más de 100.000 € de dinero público en juego En contratos de cuantía elevada, la falta de pugna comercial tiene un impacto presupuestario especialmente severo para las arcas municipales."
-          },
-          {
-            "type": "paragraph",
-            "text": "Tipología 3"
+            "type": "miniCard",
+            "title": "Más de 100.000 € de dinero público en juego",
+            "text": "En contratos de cuantía elevada, la falta de pugna comercial tiene un impacto presupuestario especialmente severo para las arcas municipales.",
+            "columns": 2,
+            "tone": "slate",
+            "span": "full"
           },
           {
             "type": "heading",
-            "text": "Bajas Acusadas y Descuentos Significativos (Art. 149 LCSP)"
+            "text": "Bajas Acusadas y Descuentos Significativos (Art. 149 LCSP)",
+            "card": {
+              "eyebrow": "Tipología 3",
+              "tone": "emerald",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "Un contratista puede ofertar una rebaja notable para ganar un concurso. Cuando el descuento es muy elevado respecto al Presupuesto Base de Licitación (PBL), se activa una señal analítica preventiva. Conviene revisar en el expediente si la mesa de contratación aplicó los mecanismos previstos para ofertas anormalmente bajas conforme al art. 149 LCSP para comprobar la viabilidad técnica, económica y laboral de la proposición."
           },
           {
-            "type": "paragraph",
-            "text": "Rebaja acusada del precio (-X% s/PBL) El precio final adjudicado es significativamente inferior (descuento ≥ 25% o ≥ 40%) al Presupuesto Base de Licitación estimado por los servicios técnicos."
+            "type": "miniCard",
+            "title": "Rebaja acusada del precio (-X% s/PBL)",
+            "text": "El precio final adjudicado es significativamente inferior (descuento ≥ 25% o ≥ 40%) al Presupuesto Base de Licitación estimado por los servicios técnicos.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "Riesgo de desviaciones de plazo o solicitud de modificados Un descuento muy pronunciado respecto a las estimaciones iniciales puede conllevar dificultades operativas si los costes reales fueron subestimados, o responder legítimamente a eficiencias tecnológicas y economías de escala del licitador."
+            "type": "miniCard",
+            "title": "Riesgo de desviaciones de plazo o solicitud de modificados",
+            "text": "Un descuento muy pronunciado respecto a las estimaciones iniciales puede conllevar dificultades operativas si los costes reales fueron subestimados, o responder legítimamente a eficiencias tecnológicas y economías de escala del licitador.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
             "type": "paragraph",
@@ -1004,7 +1057,7 @@
             "text": "Los factores analíticos ponderados (ej: **+**50%**** de rebaja acusada, **+30%** por riesgo operativo/modificados y **+10%** por verificación de trámite) representan la intensidad cualitativa de los indicios. Esta suma se proyecta matemáticamente en la escala de severidad mediante:"
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "score = pct ≥ 40? min(9.2, 5.5 + ((pct - 40) / 20) × 2.5): min(4.9, 3.2 + ((pct - 25) / 15) × 1.5)"
           },
           {
@@ -1013,75 +1066,109 @@
           },
           {
             "type": "heading",
-            "text": "Categorías Metodológicas de Indicios en Fichas de Alerta (Cat. A – Cat. D)"
+            "text": "Categorías Metodológicas de Indicios en Fichas de Alerta (Cat. A – Cat. D)",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "Cada alerta generada por el sistema se clasifica en una categoría epistemológica que delimita el grado de certeza del dato y el tipo de contraste requerido por el analista cívico:"
           },
           {
-            "type": "paragraph",
-            "text": "Cat. A: Dato localizado Dato objetivo registrado de forma explícita y estructurada en PLACSP (ej. licitador único con número formal de ofertas = 1 o coincidencia de fechas de adjudicación)."
+            "type": "miniCard",
+            "title": "Cat. A: Dato localizado",
+            "text": "Dato objetivo registrado de forma explícita y estructurada en PLACSP (ej. licitador único con número formal de ofertas = 1 o coincidencia de fechas de adjudicación).",
+            "columns": 2,
+            "tone": "blue"
           },
           {
-            "type": "paragraph",
-            "text": "Cat. B: Info no localizada Información no disponible en los campos estructurados principales de PLACSP (requiere examinar documentos adjuntos, pliegos técnicos o resoluciones en PDF)."
+            "type": "miniCard",
+            "title": "Cat. B: Info no localizada",
+            "text": "Información no disponible en los campos estructurados principales de PLACSP (requiere examinar documentos adjuntos, pliegos técnicos o resoluciones en PDF).",
+            "columns": 2,
+            "tone": "amber"
           },
           {
-            "type": "paragraph",
-            "text": "Cat. C: Indicador analítico Cálculo métrico derivado mediante algoritmos estadísticos (ej. porcentaje de baja acusada respecto al PBL o ratios de concentración de mercado). En ningún caso se califica a priori una oferta de «baja temeraria», concepto legal que compete declarar al órgano de contratación tras el trámite del art. 149 LCSP."
+            "type": "miniCard",
+            "title": "Cat. C: Indicador analítico",
+            "text": "Cálculo métrico derivado mediante algoritmos estadísticos (ej. porcentaje de baja acusada respecto al PBL o ratios de concentración de mercado). En ningún caso se califica a priori una oferta de «baja temeraria», concepto legal que compete declarar al órgano de contratación tras el trámite del art. 149 LCSP.",
+            "columns": 2,
+            "tone": "emerald"
           },
           {
-            "type": "paragraph",
-            "text": "Cat. D: Requiere examinar expediente Indicios cuantitativos acumulados (ej. contratos menores con identidad de proveedor y prestaciones afines) que no constituyen infracción per se y exigen examinar el expediente administrativo completo y los informes de necesidad (art. 118.2 LCSP) para valorar la unidad funcional."
+            "type": "miniCard",
+            "title": "Cat. D: Requiere examinar expediente",
+            "text": "Indicios cuantitativos acumulados (ej. contratos menores con identidad de proveedor y prestaciones afines) que no constituyen infracción per se y exigen examinar el expediente administrativo completo y los informes de necesidad (art. 118.2 LCSP) para valorar la unidad funcional.",
+            "columns": 2,
+            "tone": "purple"
           },
           {
             "type": "heading",
-            "text": "Cómputo del «Plazo Total Real» y Cronometría Contractual"
+            "text": "Cómputo del «Plazo Total Real» y Cronometría Contractual",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "La cronometría de los contratos desplegada en las fichas individualizadas mide la duración efectiva de los procedimientos respetando la naturaleza jurídica de cada tipología:"
           },
           {
-            "type": "paragraph",
-            "text": "Contratos Mayores y Procedimientos Concurrenciales"
+            "type": "subcard",
+            "title": "Contratos Mayores y Procedimientos Concurrenciales",
+            "text": "El **plazo total real** de tramitación computa desde la *publicación del anuncio de licitación* en PLACSP hasta el hito final de formalización o adjudicación definitiva. Este intervalo refleja los tiempos administrativos reales de licitación, presentación de plicas y valoración de ofertas.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "El **plazo total real** de tramitación computa desde la *publicación del anuncio de licitación* en PLACSP hasta el hito final de formalización o adjudicación definitiva. Este intervalo refleja los tiempos administrativos reales de licitación, presentación de plicas y valoración de ofertas."
-          },
-          {
-            "type": "paragraph",
-            "text": "Contratos Menores (Régimen Especial Arts. 118 y 63.4 LCSP)"
-          },
-          {
-            "type": "paragraph",
-            "text": "Los contratos menores son de adjudicación directa y carecen legalmente de anuncio previo de licitación. Su publicidad en PLACSP se realiza trimestralmente *a posteriori* conforme al art. 63.4 LCSP. Por ello, el **plazo total real** de ejecución computa desde la *fecha de adjudicación o encargo formal* hasta la fecha prevista de finalización o recepción, sin tomar como inicio la fecha de publicación del anuncio en la plataforma."
+            "type": "subcard",
+            "title": "Contratos Menores (Régimen Especial Arts. 118 y 63.4 LCSP)",
+            "text": "Los contratos menores son de adjudicación directa y carecen legalmente de anuncio previo de licitación. Su publicidad en PLACSP se realiza trimestralmente *a posteriori* conforme al art. 63.4 LCSP. Por ello, el **plazo total real** de ejecución computa desde la *fecha de adjudicación o encargo formal* hasta la fecha prevista de finalización o recepción, sin tomar como inicio la fecha de publicación del anuncio en la plataforma.",
+            "columns": 2,
+            "tone": "slate"
           },
           {
             "type": "heading",
-            "text": "Distribución Temporal por Fases del Ciclo de Vida"
+            "text": "Distribución Temporal por Fases del Ciclo de Vida",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "El visor de ciclo de vida desglosa gráficamente la evolución temporal del contrato a través de sus hitos esenciales:"
           },
           {
-            "type": "paragraph",
-            "text": "1. Convocatoria Publicación inicial de pliegos y apertura del plazo de presentación."
+            "type": "miniCard",
+            "title": "1. Convocatoria",
+            "text": "Publicación inicial de pliegos y apertura del plazo de presentación.",
+            "columns": 4,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "2. Evaluación Cierre de ofertas, apertura de sobres técnicos y baremación por la mesa."
+            "type": "miniCard",
+            "title": "2. Evaluación",
+            "text": "Cierre de ofertas, apertura de sobres técnicos y baremación por la mesa.",
+            "columns": 4,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "3. Adjudicación Resolución o Decreto del órgano de contratación seleccionando al licitador."
+            "type": "miniCard",
+            "title": "3. Adjudicación",
+            "text": "Resolución o Decreto del órgano de contratación seleccionando al licitador.",
+            "columns": 4,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "4. Formalización / Pub. Firma del contrato o publicación trimestral ex post en menores (art. 63.4 LCSP)."
+            "type": "miniCard",
+            "title": "4. Formalización / Pub.",
+            "text": "Firma del contrato o publicación trimestral ex post en menores (art. 63.4 LCSP).",
+            "columns": 4,
+            "tone": "slate"
           }
         ]
       },
