@@ -117,6 +117,31 @@ assert.deepEqual(
   'the three alert typologies must retain their labels');
 assert.equal(riskGuideBlocks.filter((block) => block.type === 'formula').length, 1,
   'the risk score formula must remain a distinct formula block');
+const sourceSection = sections.find((section) => section.id === 'fuente-y-actualizacion');
+assert.equal((sourceSection?.blocks ?? []).filter((block) => block.type === 'subcard').length, 3,
+  'the data-source explanations and synchronization notice must retain their cards');
+const coverageSection = sections.find((section) => section.id === 'cobertura-temporal');
+assert.equal((coverageSection?.blocks ?? []).filter((block) => block.type === 'subcard').length, 5,
+  'the historical coverage and institutional source cards must remain structured');
+const comserSection = sections.find((section) => section.id === 'comsermancha');
+assert.deepEqual((comserSection?.blocks ?? []).filter((block) => block.type === 'subcard').map((block) => block.tone),
+  ['amber', 'emerald', 'orange'],
+  'Comsermancha warning and scope cards must preserve their visual distinctions');
+const uteSection = sections.find((section) => section.id === 'utes');
+assert.equal((uteSection?.blocks ?? []).filter((block) => block.type === 'subcard').length, 2,
+  'the UTE identification and methodological limitation must remain side-by-side cards');
+const lotsSection = sections.find((section) => section.id === 'division-lotes');
+assert.equal((lotsSection?.blocks ?? []).filter((block) => block.type === 'miniCard' && block.columns === 3).length, 3,
+  'the three lot-division criteria must remain in a three-column group');
+const flowSection = sections.find((section) => section.id === 'flujo');
+assert.equal((flowSection?.blocks ?? []).filter((block) => block.type === 'miniCard').length, 8,
+  'the four contract states and four economic classifications must remain card groups');
+assert.deepEqual((flowSection?.blocks ?? []).filter((block) => block.type === 'miniCard').slice(0, 4).map((block) => block.tone),
+  ['emerald', 'amber', 'blue', 'red'],
+  'contract-flow states must preserve their semantic colors');
+const legalSourcesSection = sections.find((section) => section.id === 'fuentes-juridicas');
+assert.ok(!(legalSourcesSection?.blocks ?? []).some((block) => block.text?.trim() === '); }'),
+  'source-code closing syntax must not leak into the legal methodology text');
 const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
 assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
 for (const table of methodologyTables) {
@@ -127,7 +152,7 @@ for (const table of methodologyTables) {
   }
 }
 const methodologyContentCount = sections.reduce((total, section) => total + (section.blocks ?? []).reduce((sectionTotal, block) => (
-  sectionTotal + 1 + (block.type === 'subcard' || (block.type === 'heading' && block.card) ? 1 : 0)
+  sectionTotal + 1 + (block.type === 'subcard' || block.type === 'miniCard' || (block.type === 'heading' && block.card) ? 1 : 0)
 ), 0), 0);
 assert.ok(methodologyContentCount > 300,
   'methodology text and structured card metadata must be preserved');
