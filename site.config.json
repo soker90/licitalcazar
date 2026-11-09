@@ -186,44 +186,26 @@
             "text": "LicitAlcázar opera bajo un principio rector inquebrantable: **la Plataforma de Contratación del Sector Público (PLACSP) es la única fuente de verdad**. Todos los contratos, importes, adjudicatarios y resoluciones provienen de los canales oficiales de datos abiertos del Ministerio de Hacienda de España."
           },
           {
-            "type": "heading",
-            "text": "¿Desde qué fuentes se obtienen los datos?"
+            "type": "subcard",
+            "title": "¿Desde qué fuentes se obtienen los datos?",
+            "text": "Los datos se descargan de los feeds sindicados normalizados bajo el estándar europeo **CODICE (Componentes y Documentos para la Contratación Electrónica)**: • Feed oficial Atom de licitaciones de perfiles de contratante (contratos mayores). • Feed oficial de contratos menores publicados por las administraciones públicas.",
+            "tone": "slate",
+            "columns": 2
           },
           {
-            "type": "paragraph",
-            "text": "Los datos se descargan de los feeds sindicados normalizados bajo el estándar europeo **CODICE (Componentes y Documentos para la Contratación Electrónica)**:"
+            "type": "subcard",
+            "title": "¿Por qué NO se extraen datos directamente de las webs municipales?",
+            "text": "**Prevención de alteraciones:** Los portales locales suelen publicar borradores provisionales o anuncios que sufren modificaciones posteriores sin trazabilidad. • **Trazabilidad jurídica:** Cada expediente en PLACSP cuenta con firma electrónica, identificador canónico legal y fecha fehaciente de registro. • **Completitud de recursos:** PLACSP refleja resoluciones oficiales, recursos ante el TACRC y modificaciones formales que los portales locales frecuentemente omiten.",
+            "tone": "slate",
+            "columns": 2
           },
           {
-            "type": "listItem",
-            "text": "Feed oficial Atom de licitaciones de perfiles de contratante (contratos mayores)."
-          },
-          {
-            "type": "listItem",
-            "text": "Feed oficial de contratos menores publicados por las administraciones públicas."
-          },
-          {
-            "type": "heading",
-            "text": "¿Por qué NO se extraen datos directamente de las webs municipales?"
-          },
-          {
-            "type": "listItem",
-            "text": "**Prevención de alteraciones:** Los portales locales suelen publicar borradores provisionales o anuncios que sufren modificaciones posteriores sin trazabilidad."
-          },
-          {
-            "type": "listItem",
-            "text": "**Trazabilidad jurídica:** Cada expediente en PLACSP cuenta con firma electrónica, identificador canónico legal y fecha fehaciente de registro."
-          },
-          {
-            "type": "listItem",
-            "text": "**Completitud de recursos:** PLACSP refleja resoluciones oficiales, recursos ante el TACRC y modificaciones formales que los portales locales frecuentemente omiten."
-          },
-          {
-            "type": "paragraph",
-            "text": "Frecuencia de sincronización:"
-          },
-          {
-            "type": "paragraph",
-            "text": "El sistema ejecuta un proceso automatizado de ingesta incremental (script de sincronización) que consulta y descarga periódicamente las nuevas licitaciones y contratos menores del ejercicio en curso volcados por los órganos de contratación de Alcázar en la plataforma estatal."
+            "type": "subcard",
+            "title": "Frecuencia de sincronización",
+            "text": "El sistema ejecuta un proceso automatizado de ingesta incremental (script de sincronización) que consulta y descarga periódicamente las nuevas licitaciones y contratos menores del ejercicio en curso volcados por los órganos de contratación de Alcázar en la plataforma estatal.",
+            "tone": "blue",
+            "columns": 2,
+            "span": "full"
           }
         ]
       },
@@ -258,32 +240,28 @@
             "text": "Para interpretar los análisis históricos con honestidad intelectual y rigor estadístico, es imprescindible distinguir dos etapas temporales bien diferenciadas:"
           },
           {
-            "type": "paragraph",
-            "text": "Cobertura según Registros Oficiales"
+            "type": "subcard",
+            "title": "Desde marzo de 2018 hasta la actualidad (LCSP)",
+            "text": "Con la entrada en vigor de la **Ley 9/2017 de Contratos del Sector Público (LCSP)** el 9 de marzo de 2018, la publicación telemática en la PLACSP en esquemas estructurados CODICE pasó a ser preceptiva para todos los entes locales. LicitAlcázar ofrece **cobertura completa según los registros PLACSP incluidos en nuestra extracción desde 2018** para los 5 entes del sector público municipal. Por rigor epistemológico, se distingue entre: 1) los *registros formalmente disponibles en PLACSP*; 2) los *datos efectivamente capturados* en las extracciones del perfil; y 3) la *cobertura temporal*, sin presumir la inexistencia de contratación no volcada a la plataforma estatal por los cauces obligatorios.",
+            "tone": "emerald",
+            "columns": 2,
+            "badge": "Cobertura según Registros Oficiales"
+          },
+          {
+            "type": "subcard",
+            "title": "Periodo 2013 – febrero de 2018",
+            "text": "Bajo el anterior *TRLCSP de 2011*, los ayuntamientos alojaban sus licitaciones en perfiles municipales propios en PDF o anuncios escaneados en el BOP de Ciudad Real, sin APIs públicas ni esquemas abiertos normalizados. La plataforma estatal PLACSP no era vinculante para contratos menores locales. Por rigor metodológico y para evitar sesgos, LicitAlcázar documenta esta limitación estructural en lugar de extrapolar estimaciones artificiales no verificables.",
+            "tone": "orange",
+            "columns": 2,
+            "badge": "Archivo Histórico Pre-LCSP"
           },
           {
             "type": "heading",
-            "text": "Desde marzo de 2018 hasta la actualidad (LCSP)"
-          },
-          {
-            "type": "paragraph",
-            "text": "Con la entrada en vigor de la **Ley 9/2017 de Contratos del Sector Público (LCSP)** el 9 de marzo de 2018, la publicación telemática en la PLACSP en esquemas estructurados CODICE pasó a ser preceptiva para todos los entes locales. LicitAlcázar ofrece **cobertura completa según los registros PLACSP incluidos en nuestra extracción desde 2018** para los 5 entes del sector público municipal. Por rigor epistemológico, se distingue entre: 1) los *registros formalmente disponibles en PLACSP*; 2) los *datos efectivamente capturados* en las extracciones del perfil; y 3) la *cobertura temporal*, sin presumir la inexistencia de contratación no volcada a la plataforma estatal por los cauces obligatorios."
-          },
-          {
-            "type": "paragraph",
-            "text": "Archivo Histórico Pre-LCSP"
-          },
-          {
-            "type": "heading",
-            "text": "Periodo 2013 – febrero de 2018"
-          },
-          {
-            "type": "paragraph",
-            "text": "Bajo el anterior *TRLCSP de 2011*, los ayuntamientos alojaban sus licitaciones en perfiles municipales propios en PDF o anuncios escaneados en el BOP de Ciudad Real, sin APIs públicas ni esquemas abiertos normalizados. La plataforma estatal PLACSP no era vinculante para contratos menores locales. Por rigor metodológico y para evitar sesgos, LicitAlcázar documenta esta limitación estructural en lugar de extrapolar estimaciones artificiales no verificables."
-          },
-          {
-            "type": "heading",
-            "text": "¿Por qué en 2018 (116 contratos) y 2019 (122 contratos) hay significativamente menos expedientes que en años posteriores (~300/año)?"
+            "text": "¿Por qué en 2018 (116 contratos) y 2019 (122 contratos) hay significativamente menos expedientes que en años posteriores (~300/año)?",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
@@ -332,35 +310,37 @@
           },
           {
             "type": "heading",
-            "text": "Contratos de la Junta (JCCM) y Diputación ejecutados en Alcázar de San Juan"
+            "text": "Contratos de la Junta (JCCM) y Diputación ejecutados en Alcázar de San Juan",
+            "card": {
+              "tone": "blue",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "Otras administraciones territoriales adjudican obras y servicios ejecutados íntegramente dentro del término de Alcázar de San Juan (por ejemplo, el mantenimiento del **Hospital General La Mancha Centro** a través del SESCAM, centros educativos comarcales o la red de carreteras provinciales como la CR-1222)."
           },
           {
-            "type": "paragraph",
-            "text": "****Portal de Datos Abiertos** JCCM**"
+            "type": "subcard",
+            "title": "Portal de Datos Abiertos JCCM",
+            "text": "Explorados los volcados del portal `datosabiertos.castillalamancha.es` para contratos menores y mayores de Sanidad, Educación y Fomento con destino territorial en Alcázar.",
+            "tone": "blue",
+            "columns": 2
           },
           {
-            "type": "paragraph",
-            "text": "Explorados los volcados del portal `datosabiertos.castillalamancha.es` para contratos menores y mayores de Sanidad, Educación y Fomento con destino territorial en Alcázar."
+            "type": "subcard",
+            "title": "Diputación Provincial de Ciudad Real",
+            "text": "Consultado el portal de transparencia (`transparencia.dipucr.es`) para planes de obras municipales (POM) e infraestructuras viarias.",
+            "tone": "blue",
+            "columns": 2
           },
           {
-            "type": "paragraph",
-            "text": "**Diputación Provincial de Ciudad Real**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Consultado el portal de transparencia (`transparencia.dipucr.es`) para planes de obras municipales (POM) e infraestructuras viarias."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Control Antiduplicidad y Marcador de Origen:**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Para no alterar las estadísticas del presupuesto estrictamente municipal de Alcázar de San Juan, los contratos procedentes de la JCCM o Diputación se procesan con **marcador de origen explícito** (`origenFuente`) y se someten a una regla de deduplicación (mismo código de expediente o coincidencia de NIF + importe exacto + similitud de objeto ≥ 35%) para impedir el doble cómputo de inversiones cofinanciadas."
+            "type": "subcard",
+            "title": "Control Antiduplicidad y Marcador de Origen",
+            "text": "Para no alterar las estadísticas del presupuesto estrictamente municipal de Alcázar de San Juan, los contratos procedentes de la JCCM o Diputación se procesan con **marcador de origen explícito** (`origenFuente`) y se someten a una regla de deduplicación (mismo código de expediente o coincidencia de NIF + importe exacto + similitud de objeto ≥ 35%) para impedir el doble cómputo de inversiones cofinanciadas.",
+            "tone": "slate",
+            "columns": 2,
+            "span": "full"
           }
         ]
       },
@@ -378,28 +358,30 @@
         "showInIndex": true,
         "blocks": [
           {
-            "type": "paragraph",
-            "text": "**Aviso de relevancia presupuestaria:** La Mancomunidad de Servicios Comsermancha tiene su sede institucional en Alcázar de San Juan (NIF P1300024E), pero presta servicio mancomunado a **21 municipios** de las provincias de Ciudad Real, Toledo y Cuenca. Sus expedientes de gestión de residuos y maquinaria (que superan los 14 millones de euros) no constituyen `gasto` exclusivo del Ayuntamiento ni de la ciudadanía de Alcázar"
+            "type": "subcard",
+            "title": "Aviso de relevancia presupuestaria",
+            "text": "La Mancomunidad de Servicios Comsermancha tiene su sede institucional en Alcázar de San Juan (NIF P1300024E), pero presta servicio mancomunado a **21 municipios** de las provincias de Ciudad Real, Toledo y Cuenca. Sus expedientes de gestión de residuos y maquinaria (que superan los 14 millones de euros) no constituyen `gasto` exclusivo del Ayuntamiento ni de la ciudadanía de Alcázar",
+            "tone": "amber",
+            "columns": 2,
+            "span": "full"
           },
           {
             "type": "paragraph",
             "text": "Para evitar distorsionar los agregados del `gasto` municipal y las comparativas de coste por habitante, LicitAlcázar clasifica cada contrato en dos ámbitos nítidos:"
           },
           {
-            "type": "paragraph",
-            "text": "Directa Municipal"
+            "type": "subcard",
+            "title": "Directa Municipal",
+            "text": "Contratos licitados y financiados directamente por el Ayuntamiento de Alcázar de San Juan y sus organismos autónomos o sociedades mercantiles dependientes: Aguas de Alcázar, Patronato Municipal de Cultura e Instituto Municipal de Deportes (IMD).",
+            "tone": "emerald",
+            "columns": 2
           },
           {
-            "type": "paragraph",
-            "text": "Contratos licitados y financiados directamente por el Ayuntamiento de Alcázar de San Juan y sus organismos autónomos o sociedades mercantiles dependientes: Aguas de Alcázar, Patronato Municipal de Cultura e Instituto Municipal de Deportes (IMD)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Indirecta (Mancomunidad)"
-          },
-          {
-            "type": "paragraph",
-            "text": "Expedientes tramitados por la Mancomunidad de Servicios Comsermancha, cuyo coste es sufragado de forma mancomunada por los **21 municipios** asociados. El explorador de licitaciones permite filtrar o aislar ambos ámbitos en todo momento."
+            "type": "subcard",
+            "title": "Indirecta (Mancomunidad)",
+            "text": "Expedientes tramitados por la Mancomunidad de Servicios Comsermancha, cuyo coste es sufragado de forma mancomunada por los **21 municipios** asociados. El explorador de licitaciones permite filtrar o aislar ambos ámbitos en todo momento.",
+            "tone": "orange",
+            "columns": 2
           }
         ]
       },
@@ -422,12 +404,16 @@
             "text": "Fórmula de identificación exacta:"
           },
           {
-            "type": "paragraph",
+            "type": "formula",
             "text": "Procedimiento ≠ 'Contrato menor' AND `num_ofertas` = 1"
           },
           {
             "type": "heading",
-            "text": "Criterios de inclusión y exclusión:"
+            "text": "Criterios de inclusión y exclusión:",
+            "card": {
+              "tone": "red",
+              "layout": "featured"
+            }
           },
           {
             "type": "listItem",
@@ -458,20 +444,18 @@
             "text": "Una **Unión Temporal de Empresas (UTE)** es una figura asociativa transitoria regulada por la Ley 18/1982 que permite a dos o más empresas unirse para ejecutar conjuntamente una obra, servicio o suministro público, compartiendo solvencia técnica y económica."
           },
           {
-            "type": "heading",
-            "text": "Identificación y Cómputo"
+            "type": "subcard",
+            "title": "Identificación y Cómputo",
+            "text": "Las UTE disponen de un NIF específico (habitualmente con letra inicial U) y personalidad jurídica propia frente a la administración contratante. En LicitAlcázar se computan y perfilan como un adjudicatario independiente, preservando la identidad formal que consta en la resolución de adjudicación.",
+            "tone": "slate",
+            "columns": 2
           },
           {
-            "type": "paragraph",
-            "text": "Las UTE disponen de un NIF específico (habitualmente con letra inicial U) y personalidad jurídica propia frente a la administración contratante. En LicitAlcázar se computan y perfilan como un adjudicatario independiente, preservando la identidad formal que consta en la resolución de adjudicación."
-          },
-          {
-            "type": "heading",
-            "text": "Limitación Metodológica Documentada"
-          },
-          {
-            "type": "paragraph",
-            "text": "Los volcados sindicados de la PLACSP no desglosan de forma sistemática el porcentaje de participación ni los CIFs individuales de cada empresa socia de la UTE en los campos estructurados. Por rigor analítico, no se descomponen artificialmente los importes entre sus matrices para evitar imputaciones arbitrarias."
+            "type": "subcard",
+            "title": "Limitación Metodológica Documentada",
+            "text": "Los volcados sindicados de la PLACSP no desglosan de forma sistemática el porcentaje de participación ni los CIFs individuales de cada empresa socia de la UTE en los campos estructurados. Por rigor analítico, no se descomponen artificialmente los importes entre sus matrices para evitar imputaciones arbitrarias.",
+            "tone": "slate",
+            "columns": 2
           }
         ]
       },
@@ -495,32 +479,33 @@
             "text": "El **artículo 99 de la Ley 9/2017 (LCSP)** consagra como principio rector de la contratación pública la **regla general de la división en lotes**. Su objetivo es democratizar el acceso a las licitaciones públicas, permitiendo que el tejido empresarial local y las pequeñas y medianas empresas (PYMEs) de Alcázar de San Juan puedan competir en igualdad de condiciones frente a grandes conglomerados."
           },
           {
-            "type": "paragraph",
-            "text": "**1. Obligación de Justificación Expresa**"
+            "type": "miniCard",
+            "title": "1. Obligación de Justificación Expresa",
+            "text": "El art. 99.3 de la LCSP establece que cuando el órgano de contratación decida no dividir el contrato en lotes, *«deberá justificar debidamente en el expediente los motivos»* (riesgo técnico de ejecución, desproporción económica o dificultad grave de coordinación).",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "El art. 99.3 de la LCSP establece que cuando el órgano de contratación decida no dividir el contrato en lotes, *«deberá justificar debidamente en el expediente los motivos»* (riesgo técnico de ejecución, desproporción económica o dificultad grave de coordinación)."
+            "type": "miniCard",
+            "title": "2. Detección Algorítmica y Tramos",
+            "text": "El sistema audita los pliegos y títulos contractuales para identificar licitaciones divididas en lotes frente a adjudicaciones en lote único. Se clasifica el `gasto` en 5 tramos (Megacontratos ≥500k€, Grandes ≥100k€, Medianos 40k-100k€, Pequeños y Menores).",
+            "columns": 3,
+            "tone": "slate"
           },
           {
-            "type": "paragraph",
-            "text": "**2. Detección Algorítmica y Tramos**"
-          },
-          {
-            "type": "paragraph",
-            "text": "El sistema audita los pliegos y títulos contractuales para identificar licitaciones divididas en lotes frente a adjudicaciones en lote único. Se clasifica el `gasto` en 5 tramos (Megacontratos ≥500k€, Grandes ≥100k€, Medianos 40k-100k€, Pequeños y Menores)."
-          },
-          {
-            "type": "paragraph",
-            "text": "**3. Correlación con la Concurrencia**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Los datos demuestran empíricamente que en Alcázar la división en lotes incrementa la concurrencia media de licitadores (+14%) y **reduce la tasa de oferta única en más de 10 puntos porcentuales** (30.8% frente a 41.7% en lote único)."
+            "type": "miniCard",
+            "title": "3. Correlación con la Concurrencia",
+            "text": "Los datos demuestran empíricamente que en Alcázar la división en lotes incrementa la concurrencia media de licitadores (+14%) y **reduce la tasa de oferta única en más de 10 puntos porcentuales** (30.8% frente a 41.7% en lote único).",
+            "columns": 3,
+            "tone": "slate"
           },
           {
             "type": "heading",
-            "text": "Auditoría Ciudadana de Pliegos"
+            "text": "Auditoría Ciudadana de Pliegos",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
@@ -1204,40 +1189,40 @@
             "text": "El análisis del ciclo de vida de las licitaciones permite evaluar la eficacia de la planificación contractual municipal, identificando pliegos que resultan fallidos, procedimientos sin concurrencia y la posterior adjudicación de contratos que inicialmente quedaron desiertos."
           },
           {
-            "type": "paragraph",
-            "text": "Adjudicadas / Formalizadas"
+            "type": "miniCard",
+            "title": "Adjudicadas / Formalizadas",
+            "text": "Expedientes que completaron satisfactoriamente la baremación y cuentan con contratista adjudicatario formalmente registrado con NIF y resolución en PLACSP.",
+            "columns": 2,
+            "tone": "emerald"
           },
           {
-            "type": "paragraph",
-            "text": "Expedientes que completaron satisfactoriamente la baremación y cuentan con contratista adjudicatario formalmente registrado con NIF y resolución en PLACSP."
+            "type": "miniCard",
+            "title": "Desiertas / Sin Adjudicar",
+            "text": "Procedimientos formalmente declarados desiertos o con estado resuelto pero con 0 ofertas o sin adjudicatario registrado. Refleja presupuestos o condiciones de pliegos que el mercado consideró inviables o poco atractivos.",
+            "columns": 2,
+            "tone": "amber"
           },
           {
-            "type": "paragraph",
-            "text": "Desiertas / Sin Adjudicar"
+            "type": "miniCard",
+            "title": "En Licitación / En Curso",
+            "text": "Contratos publicados en plazo de presentación de ofertas o actualmente en mesa de contratación para valoración de ofertas técnicas y económicas.",
+            "columns": 2,
+            "tone": "blue"
           },
           {
-            "type": "paragraph",
-            "text": "Procedimientos formalmente declarados desiertos o con estado resuelto pero con 0 ofertas o sin adjudicatario registrado. Refleja presupuestos o condiciones de pliegos que el mercado consideró inviables o poco atractivos."
-          },
-          {
-            "type": "paragraph",
-            "text": "En Licitación / En Curso"
-          },
-          {
-            "type": "paragraph",
-            "text": "Contratos publicados en plazo de presentación de ofertas o actualmente en mesa de contratación para valoración de ofertas técnicas y económicas."
-          },
-          {
-            "type": "paragraph",
-            "text": "Anuladas / Desistidas"
-          },
-          {
-            "type": "paragraph",
-            "text": "Expedientes revocados por el órgano de contratación por vicios de tramitación, desistimiento justificado o modificaciones sustanciales sobrevenidas antes de la adjudicación."
+            "type": "miniCard",
+            "title": "Anuladas / Desistidas",
+            "text": "Expedientes revocados por el órgano de contratación por vicios de tramitación, desistimiento justificado o modificaciones sustanciales sobrevenidas antes de la adjudicación.",
+            "columns": 2,
+            "tone": "red"
           },
           {
             "type": "heading",
-            "text": "Heurística de Emparejamiento: Desierta → Re-adjudicación Posterior"
+            "text": "Heurística de Emparejamiento: Desierta → Re-adjudicación Posterior",
+            "card": {
+              "tone": "slate",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
@@ -1261,43 +1246,43 @@
           },
           {
             "type": "heading",
-            "text": "Sentido económico de la licitación"
+            "text": "Sentido económico de la licitación",
+            "card": {
+              "tone": "emerald",
+              "layout": "featured"
+            }
           },
           {
             "type": "paragraph",
             "text": "Para evitar mezclar `gasto` municipal con operaciones en las que el Ayuntamiento actúa como receptor de un `ingreso`, LicitAlcázar mantiene separadas la **naturaleza económica** y la **naturaleza jurídica del contrato**. La clasificación económica se deriva de los datos estructurados y reglas documentadas del proyecto; no es un campo oficial adicional publicado por PLACSP."
           },
           {
-            "type": "paragraph",
-            "text": "**Gasto municipal**"
+            "type": "miniCard",
+            "title": "Gasto municipal",
+            "text": "Corresponde a expedientes clasificados como `gasto`: la cifra publicada se interpreta como una obligación económica del Ayuntamiento hacia el adjudicatario o proveedor.",
+            "columns": 2,
+            "tone": "emerald"
           },
           {
-            "type": "paragraph",
-            "text": "Corresponde a expedientes clasificados como `gasto`: la cifra publicada se interpreta como una obligación económica del Ayuntamiento hacia el adjudicatario o proveedor."
+            "type": "miniCard",
+            "title": "Ingreso municipal",
+            "text": "Corresponde a expedientes clasificados como `ingreso`: incluye operaciones patrimoniales y cánones/ingresos identificados por las reglas de clasificación.",
+            "columns": 2,
+            "tone": "emerald"
           },
           {
-            "type": "paragraph",
-            "text": "**Ingreso municipal**"
+            "type": "miniCard",
+            "title": "Sin flujo municipal directo determinado",
+            "text": "Corresponde a `concesion` en el modelo económico actual. No se presume que el Ayuntamiento pague ni que el concesionario pague al Ayuntamiento sin evidencia estructurada suficiente.",
+            "columns": 2,
+            "tone": "emerald"
           },
           {
-            "type": "paragraph",
-            "text": "Corresponde a expedientes clasificados como `ingreso`: incluye operaciones patrimoniales y cánones/ingresos identificados por las reglas de clasificación."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Sin flujo municipal directo determinado**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Corresponde a `concesion` en el modelo económico actual. No se presume que el Ayuntamiento pague ni que el concesionario pague al Ayuntamiento sin evidencia estructurada suficiente."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Sentido económico no determinado**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Se utiliza cuando la clasificación económica es `sin_clasificar`. El sistema no convierte una ausencia de información en una afirmación sobre quién paga."
+            "type": "miniCard",
+            "title": "Sentido económico no determinado",
+            "text": "Se utiliza cuando la clasificación económica es `sin_clasificar`. El sistema no convierte una ausencia de información en una afirmación sobre quién paga.",
+            "columns": 2,
+            "tone": "emerald"
           },
           {
             "type": "paragraph",
@@ -1936,10 +1921,6 @@
           {
             "type": "paragraph",
             "text": "Consultar Aviso Legal y Términos de Uso → Ver Política de Privacidad y RGPD → Canal de Rectificación →"
-          },
-          {
-            "type": "paragraph",
-            "text": "); }"
           }
         ]
       }
