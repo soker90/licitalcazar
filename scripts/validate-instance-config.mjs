@@ -142,6 +142,41 @@ assert.deepEqual((flowSection?.blocks ?? []).filter((block) => block.type === 'm
 const legalSourcesSection = sections.find((section) => section.id === 'fuentes-juridicas');
 assert.ok(!(legalSourcesSection?.blocks ?? []).some((block) => block.text?.trim() === '); }'),
   'source-code closing syntax must not leak into the legal methodology text');
+const analysisCards = [
+  ['contratos-vivos', 3, 3],
+  ['distribucion-tiempos', 3, 3],
+  ['evolucion-temporal', 3, 3],
+  ['renovacion-mercado', 3, 3],
+  ['calendario-electoral', 3, 3],
+  ['modificados-sobrecostes', 3, 2],
+  ['duracion-efectiva', 2, 2],
+  ['empresas-locales', 2, 2],
+  ['verificabilidad', 3, 3],
+  ['vigilancia-datos', 4, 2],
+];
+for (const [id, expectedCount, columns] of analysisCards) {
+  const section = sections.find((item) => item.id === id);
+  const cards = (section?.blocks ?? []).filter((block) => block.type === 'miniCard');
+  assert.equal(cards.length, expectedCount, `${id} must retain its original methodology card count`);
+  assert.ok(cards.every((block) => block.columns === columns),
+    `${id} cards must retain their original ${columns}-column layout`);
+}
+const legalCards = (legalSourcesSection?.blocks ?? []).filter((block) => block.type === 'miniCard');
+assert.equal(legalCards.length, 7, 'the legal source groups must retain their seven structured source cards');
+assert.equal((legalSourcesSection?.blocks ?? []).filter((block) => block.type === 'heading' && block.card).length, 6,
+  'the six legal-source groups must retain their separate visual hierarchy');
+const internalMethodologyLinks = [
+  ['verificabilidad', '/licitaciones', '/analisis'],
+  ['vigilancia-datos', '/seguimiento', '/datos'],
+  ['fuentes-juridicas', '/aviso-legal', '/privacidad', '/rectificacion'],
+];
+for (const [id, ...routes] of internalMethodologyLinks) {
+  const section = sections.find((item) => item.id === id);
+  const text = (section?.blocks ?? []).map((block) => block.text ?? '').join(' ');
+  for (const route of routes) {
+    assert.ok(text.includes(`](${route})`), `${id} must preserve its internal navigation link to ${route}`);
+  }
+}
 const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
 assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
 for (const table of methodologyTables) {
