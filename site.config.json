@@ -1656,7 +1656,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Explorar Licitaciones y contrastar fichas Ver Panel de Auditoría y Métricas"
+            "text": "[Explorar Licitaciones y contrastar fichas](/licitaciones) · [Ver Panel de Auditoría y Métricas](/analisis)"
           }
         ]
       },
@@ -1711,7 +1711,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Ver **Contratos en Curso** Ver **Portal de Datos Abiertos**"
+            "text": "[Ver Contratos en Curso](/seguimiento) · [Ver Portal de Datos Abiertos](/datos)"
           }
         ]
       },
@@ -1913,7 +1913,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Consultar Aviso Legal y Términos de Uso → Ver Política de Privacidad y RGPD → Canal de Rectificación →"
+            "text": "[Consultar Aviso Legal y Términos de Uso](/aviso-legal) · [Ver Política de Privacidad y RGPD](/privacidad) · [Canal de Rectificación](/rectificacion)"
           }
         ]
       }
