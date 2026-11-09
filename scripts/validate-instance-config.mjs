@@ -162,9 +162,9 @@ for (const [id, expectedCount, columns] of analysisCards) {
     `${id} cards must retain their original ${columns}-column layout`);
 }
 const legalCards = (legalSourcesSection?.blocks ?? []).filter((block) => block.type === 'miniCard');
-assert.equal(legalCards.length, 9, 'the legal source groups must retain their nine structured source cards');
-assert.equal((legalSourcesSection?.blocks ?? []).filter((block) => block.type === 'heading' && block.card).length, 3,
-  'the three main legal-source groups must retain their visual hierarchy');
+assert.equal(legalCards.length, 7, 'the legal source groups must retain their seven structured source cards');
+assert.equal((legalSourcesSection?.blocks ?? []).filter((block) => block.type === 'heading' && block.card).length, 6,
+  'the six legal-source groups must retain their separate visual hierarchy');
 const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
 assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
 for (const table of methodologyTables) {
