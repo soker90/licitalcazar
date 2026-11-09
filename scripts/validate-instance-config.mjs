@@ -84,6 +84,21 @@ assert.ok(sections.some((section) => section.blocks?.some((block) => block.type 
   'nested methodology headings must be preserved');
 assert.ok(sections.some((section) => section.blocks?.some((block) => block.type === 'listItem')),
   'methodology bullet points must be preserved');
+const redFlagSection = sections.find((section) => section.id === 'banderas-rojas');
+const indicatorCards = (redFlagSection?.blocks ?? []).filter((block) => block.type === 'heading' && block.card);
+assert.equal(indicatorCards.length, 7, 'all seven legacy audit indicators must retain their card metadata');
+assert.deepEqual(indicatorCards.map((block) => block.card.tone),
+  ['amber', 'emerald', 'orange', 'blue', 'red', 'red', 'blue'],
+  'audit indicator cards must preserve their original visual severity palette');
+assert.deepEqual(indicatorCards.map((block) => block.card.layout),
+  ['compact', 'compact', 'compact', 'compact', 'featured', 'featured', 'featured'],
+  'the first four indicators must remain compact and the detailed indicators full width');
+assert.equal((redFlagSection?.blocks ?? []).filter((block) => block.type === 'formula').length, 5,
+  'indicator formulas must remain distinct styled blocks');
+assert.equal((redFlagSection?.blocks ?? []).filter((block) => block.type === 'subcard').length, 2,
+  'the PBL/VEC and competition explanations must retain their nested cards');
+assert.equal((redFlagSection?.blocks ?? []).filter((block) => block.type === 'miniCard').length, 3,
+  'the three corporate-aggregation explanations must retain their compact cards');
 const methodologyTables = sections.flatMap((section) => section.blocks ?? []).filter((block) => block.type === 'table');
 assert.equal(methodologyTables.length, 1, 'the historical coverage table must remain a structured table');
 for (const table of methodologyTables) {
