@@ -2193,5 +2193,8 @@
     }
   ],
   "brandPrefix": "Licit",
-  "brandAccent": "Alcázar"
+  "brandAccent": "Alcázar",
+  "homeTopCompaniesTitle": "Top 10 Empresas Adjudicatarias",
+  "homeAuthoritiesDescription": "Gasto público acumulado por dependencias municipales y entes con sede o actuación en Alcázar",
+  "homeRecentContractsDescription": "Expedientes de contratación y adjudicaciones más recientes en Alcázar de San Juan"
 }

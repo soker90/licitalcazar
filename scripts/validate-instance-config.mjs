@@ -20,6 +20,9 @@ assert.equal(site.scopePresentation?.all?.label, 'Total');
 assert.ok(site.homePresentation?.primary && site.homePresentation?.associated && site.homePresentation?.all,
   'homepage copy must be configured for all three scopes');
 assert.equal(site.homeLatestPublicationLabel, 'Última licitación oficial');
+assert.equal(site.homeTopCompaniesTitle, 'Top 10 Empresas Adjudicatarias');
+assert.equal(site.homeAuthoritiesDescription, 'Gasto público acumulado por dependencias municipales y entes con sede o actuación en Alcázar');
+assert.equal(site.homeRecentContractsDescription, 'Expedientes de contratación y adjudicaciones más recientes en Alcázar de San Juan');
 assert.equal(site.brandPrefix, 'Licit', 'the legacy wordmark prefix must be preserved');
 assert.equal(site.brandAccent, 'Alcázar', 'the legacy wordmark accent must be preserved');
 assert.equal(site.headerBrandSuffix, 'v2', 'the legacy v2 brand suffix must be displayed');
