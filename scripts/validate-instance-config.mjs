@@ -12,6 +12,7 @@ const historical = readJson('data/historical-sources.json');
 
 assert.equal(site.siteName, 'LicitAlcázar', 'siteName must identify the LicitAlcázar instance');
 assert.equal(site.localityName, 'Alcázar de San Juan', 'localityName must match the configured municipality');
+assert.equal(site.localityShortName, 'Alcázar', 'localityShortName must match the legacy locality label');
 assert.equal(site.siteUrl, 'https://licitalcazar.vercel.app', 'the canonical URL must remain the current production domain');
 assert.equal(site.scopePresentation?.primary?.label, 'Solo Ayuntamiento');
 assert.equal(site.scopePresentation?.associated?.label, 'Comsermancha (21 municipios)');
