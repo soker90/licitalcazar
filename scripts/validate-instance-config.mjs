@@ -20,7 +20,9 @@ assert.equal(site.scopePresentation?.all?.label, 'Total');
 assert.ok(site.homePresentation?.primary && site.homePresentation?.associated && site.homePresentation?.all,
   'homepage copy must be configured for all three scopes');
 assert.equal(site.homeLatestPublicationLabel, 'Última licitación oficial');
-assert.ok(!site.headerBrandSuffix, 'the discarded v2 brand suffix must not be displayed');
+assert.equal(site.brandPrefix, 'Licit', 'the legacy wordmark prefix must be preserved');
+assert.equal(site.brandAccent, 'Alcázar', 'the legacy wordmark accent must be preserved');
+assert.equal(site.headerBrandSuffix, 'v2', 'the legacy v2 brand suffix must be displayed');
 assert.equal(site.instanceCreationGuide, false, 'public LicitAlcázar must not expose the instance creation guide');
 assert.ok(site.homeAuditDescription?.includes('gasto público de Alcázar'),
   'the homepage audit description must use the LicitAlcázar wording');
