@@ -16,6 +16,7 @@ assert.equal(site.localityShortName, 'Alcázar', 'localityShortName must match t
 assert.equal(site.legalMunicipalInterventionLabel, 'A la Intervención General municipal.');
 assert.equal(site.legalMunicipalSecretaryLabel, 'A la Secretaría General del Ayuntamiento.');
 assert.equal(site.legalRegionalAuditBodyLabel, 'A la Cámara de Cuentas de Castilla-La Mancha (Ley 7/2021).');
+assert.deepEqual(site.exportFilenamePrefixes, { contracts: 'licitaciones', companies: 'empresas', audit: 'alertas_auditoria', defaultScope: 'alcazar' });
 assert.equal(site.siteUrl, 'https://licitalcazar.vercel.app', 'the canonical URL must remain the current production domain');
 assert.equal(site.scopePresentation?.primary?.label, 'Solo Ayuntamiento');
 assert.equal(site.scopePresentation?.associated?.label, 'Comsermancha (21 municipios)');
