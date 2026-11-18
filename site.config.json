@@ -2197,5 +2197,8 @@
   "homeTopCompaniesTitle": "Top 10 Empresas Adjudicatarias",
   "homeAuthoritiesDescription": "Gasto público acumulado por dependencias municipales y entes con sede o actuación en Alcázar",
   "homeRecentContractsDescription": "Expedientes de contratación y adjudicaciones más recientes en Alcázar de San Juan",
-  "localityShortName": "Alcázar"
+  "localityShortName": "Alcázar",
+  "legalMunicipalInterventionLabel": "A la Intervención General municipal.",
+  "legalMunicipalSecretaryLabel": "A la Secretaría General del Ayuntamiento.",
+  "legalRegionalAuditBodyLabel": "A la Cámara de Cuentas de Castilla-La Mancha (Ley 7/2021)."
 }
