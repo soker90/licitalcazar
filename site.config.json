@@ -2200,5 +2200,11 @@
   "localityShortName": "Alcázar",
   "legalMunicipalInterventionLabel": "A la Intervención General municipal.",
   "legalMunicipalSecretaryLabel": "A la Secretaría General del Ayuntamiento.",
-  "legalRegionalAuditBodyLabel": "A la Cámara de Cuentas de Castilla-La Mancha (Ley 7/2021)."
+  "legalRegionalAuditBodyLabel": "A la Cámara de Cuentas de Castilla-La Mancha (Ley 7/2021).",
+  "exportFilenamePrefixes": {
+    "contracts": "licitaciones",
+    "companies": "empresas",
+    "audit": "alertas_auditoria",
+    "defaultScope": "alcazar"
+  }
 }
