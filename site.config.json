@@ -2132,10 +2132,16 @@
   "homeRiskDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar de San Juan.",
   "analysisPresentation": {
     "scopeLabels": {
-      "primary": "Directa Municipal"
+      "primary": "Directa Municipal",
+      "associated": "Mancomunidad",
+      "all": "todos"
     },
     "methodologyLinkLabel": "Criterio Comsermancha y Metodología",
-    "methodologyLinkHref": "/metodologia#comsermancha"
+    "methodologyLinkHref": "/metodologia#comsermancha",
+    "modifiedContractorsTitle": "Top Contratistas con Modificaciones",
+    "preElectionPeriod2023": "Mar – May 2023",
+    "preElectionPeriod2019": "Mar – May 2019",
+    "preElectionWindowLabel": "Ventana Preelectoral (Mar–May)"
   },
   "homeAuditDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar.",
   "dataPresentation": {
@@ -2205,6 +2211,8 @@
     "contracts": "licitaciones",
     "companies": "empresas",
     "audit": "alertas_auditoria",
-    "defaultScope": "alcazar"
+    "defaultScope": "alcazar",
+    "recurrentMinors": "alcazar",
+    "fractioning": "alcazar"
   }
 }
