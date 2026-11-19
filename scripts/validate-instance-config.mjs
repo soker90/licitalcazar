@@ -218,5 +218,16 @@ assert.ok(Array.isArray(historical.periods) && historical.periods.length > 0,
   'historical coverage periods must be present');
 assert.ok(Array.isArray(site.localSupplierNifs) && site.localSupplierNifs.length > 0,
   'the local supplier NIF catalogue must be configured');
+assert.deepEqual(site.analysisPresentation?.scopeLabels, {
+  primary: 'Directa Municipal',
+  associated: 'Mancomunidad',
+  all: 'todos',
+}, 'analysis scope labels must match the legacy LicitAlcázar wording');
+assert.equal(site.analysisPresentation?.modifiedContractorsTitle, 'Top Contratistas con Modificaciones');
+assert.equal(site.analysisPresentation?.preElectionPeriod2023, 'Mar – May 2023');
+assert.equal(site.analysisPresentation?.preElectionPeriod2019, 'Mar – May 2019');
+assert.equal(site.analysisPresentation?.preElectionWindowLabel, 'Ventana Preelectoral (Mar–May)');
+assert.equal(site.exportFilenamePrefixes?.recurrentMinors, 'alcazar');
+assert.equal(site.exportFilenamePrefixes?.fractioning, 'alcazar');
 
 console.log('Instance configuration validated: LicitAlcázar, 10 authorities, 3 scopes and 20 methodology sections.');
