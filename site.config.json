@@ -2146,7 +2146,14 @@
   "homeAuditDescription": "Señales estadísticas automáticas para identificar riesgos de concentración, bajas acusadas y concurrencia restringida en el gasto público de Alcázar.",
   "dataPresentation": {
     "scopeLabels": {
-      "primary": "Directa Municipal (Ayto, Aguas, Patronato, IMD)"
+      "primary": "Directa Municipal (Ayto, Aguas, Patronato, IMD)",
+      "associated": "Indirecta (Mancomunidad COMSERMANCHA)",
+      "all": "Todos los entes consolidados"
+    },
+    "currentScopeLabels": {
+      "primary": "Solo Ayuntamiento",
+      "associated": "Comsermancha",
+      "all": "Total Consolidado"
     }
   },
   "homeAnnualEvolutionDescription": "Volumen presupuestario adjudicado y número de contratos tramitados por año en Alcázar de San Juan",
@@ -2214,5 +2221,12 @@
     "defaultScope": "alcazar",
     "recurrentMinors": "alcazar",
     "fractioning": "alcazar"
+  },
+  "contractExplorerPresentation": {
+    "scopeLabels": {
+      "all": "Todos",
+      "primary": "Control Directo (Ayto. y OOAA)",
+      "associated": "Control Indirecto (Comsermancha)"
+    }
   }
 }
